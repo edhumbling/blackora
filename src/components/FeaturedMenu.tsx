@@ -22,7 +22,7 @@ const featuredItems = [
     name: "Fufu & Egusi Soup",
     description: "Smooth, dough-like fufu served with rich and savory egusi soup made from ground melon seeds, leafy vegetables, and protein of choice.",
     price: 21.99,
-    image: "https://images.unsplash.com/photo-1643892374485-60a3125021d5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    image: "https://ik.imagekit.io/humbling/f67513d9dbea376d1ac4fb10187b387cf802abbc7deae9587897ccd0dba8cd1f5d53c31f8ba30972a9ff10eedf379300f378bb08aba6d13feb1b6e15d9513e83586dfcc1f11702cb28f982ef45dd05ae?tr=w-600,h-600,c-at_max",
     category: "main",
     popular: true
   },
