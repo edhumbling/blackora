@@ -1,5 +1,4 @@
 
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import MenuItem from "./MenuItem";
 import { Link } from "react-router-dom";
@@ -12,7 +11,7 @@ const featuredItems = [
     name: "Jollof Rice",
     description: "Traditional West African rice dish cooked in a rich, flavorful tomato and pepper sauce. Served with grilled chicken.",
     price: 19.99,
-    image: "https://images.unsplash.com/photo-1634632109496-47b9b57db94b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    image: "https://ik.imagekit.io/humbling/food/chefabbys_1734083072_3522066547500215715_35533844416.jpg?updatedAt=1741191185444",
     category: "main",
     popular: true,
     spicy: true
@@ -38,10 +37,10 @@ const featuredItems = [
   },
   {
     id: "4",
-    name: "Moin Moin",
-    description: "Steamed bean pudding made from blended black-eyed peas, peppers, and spices. Soft and savory.",
+    name: "Yam and Plantain",
+    description: "Traditional fried yam and plantain served with a spicy tomato dipping sauce. Perfect as a side or appetizer.",
     price: 13.99,
-    image: "https://images.unsplash.com/photo-1642769881638-49a3d7546dc2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    image: "https://ik.imagekit.io/humbling/food/eatwithafia_1614699778_2520606889971483910_2014293526.jpg?updatedAt=1741190695139",
     category: "side",
     vegetarian: true
   }

@@ -12,6 +12,18 @@ const About = () => {
               Our Story
             </h2>
             
+            <div className="flex items-center gap-4 mb-6">
+              <img 
+                src="https://ik.imagekit.io/humbling/food/eatwithafia_1614699778_2520606889971483910_2014293526.jpg?updatedAt=1741190695139" 
+                alt="Hardy Yusif - Founder" 
+                className="w-20 h-20 rounded-full object-cover border-2 border-gold-400"
+              />
+              <div>
+                <h3 className="font-medium text-lg">Hardy Yusif</h3>
+                <p className="text-muted-foreground text-sm">Founder & Executive Chef</p>
+              </div>
+            </div>
+            
             <p className="text-muted-foreground mb-4">
               Founded by Hardy Yusif and his passionate team, Blackora was born from a desire to share the rich culinary heritage of Africa with the world. Our journey began in Prince George, Canada, where we set out to create a dining experience that celebrates the diverse flavors and cultural traditions of African cuisine.
             </p>
