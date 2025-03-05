@@ -50,8 +50,7 @@ const Hero = () => {
             <Link to="/reservations">
               <Button 
                 size="lg" 
-                variant="outline" 
-                className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm"
+                className="bg-white text-gold-600 hover:bg-white/90 border-2 border-gold-500 shadow-lg backdrop-blur-sm animate-pulse"
               >
                 Make Reservation
               </Button>
