@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useCart } from "@/hooks/useCart";
-import { ShoppingBag, User, Menu, X } from "lucide-react";
+import { ShoppingBag, User, Menu } from "lucide-react";
 import AuthModal from "./AuthModal";
 
 const Navbar = () => {
@@ -46,7 +46,9 @@ const Navbar = () => {
               alt="Blackora" 
               className="h-12 w-auto"
             />
-            <span className="text-lg md:text-xl font-serif font-semibold">Blackora</span>
+            <span className={`text-lg md:text-xl font-serif font-semibold ${
+              isScrolled ? "text-gold-600" : "text-white"
+            }`}>Blackora</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -57,8 +59,8 @@ const Navbar = () => {
                 to={item.path}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors relative group ${
                   location.pathname === item.path
-                    ? "text-gold-600"
-                    : "text-foreground/80 hover:text-gold-600"
+                    ? isScrolled ? "text-gold-600" : "text-gold-400"
+                    : isScrolled ? "text-foreground/80 hover:text-gold-600" : "text-white hover:text-gold-400"
                 }`}
               >
                 {item.name}
@@ -77,7 +79,7 @@ const Navbar = () => {
               onClick={() => setIsAuthOpen(true)} 
               variant="ghost" 
               size="icon" 
-              className="text-foreground/80 hover:text-gold-600"
+              className={`${isScrolled ? "text-foreground/80 hover:text-gold-600" : "text-white hover:text-gold-400"}`}
             >
               <User className="h-5 w-5" />
             </Button>
@@ -86,7 +88,7 @@ const Navbar = () => {
               <Button 
                 variant="ghost" 
                 size="icon" 
-                className="text-foreground/80 hover:text-gold-600 relative"
+                className={`${isScrolled ? "text-foreground/80 hover:text-gold-600" : "text-white hover:text-gold-400"} relative`}
               >
                 <ShoppingBag className="h-5 w-5" />
                 {totalItems > 0 && (
@@ -103,7 +105,7 @@ const Navbar = () => {
                 <Button 
                   variant="ghost" 
                   size="icon" 
-                  className="md:hidden text-foreground/80 hover:text-gold-600"
+                  className={`md:hidden ${isScrolled ? "text-foreground/80 hover:text-gold-600" : "text-white hover:text-gold-400"}`}
                 >
                   <Menu className="h-5 w-5" />
                 </Button>

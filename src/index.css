@@ -36,6 +36,12 @@
     --ring: 40 60% 50%;
 
     --radius: 0.5rem;
+    
+    /* Kente-inspired colors */
+    --kente-gold: #D7B550;
+    --kente-red: #9F2B0C;
+    --kente-green: #1A5D1A;
+    --kente-black: #222222;
   }
 }
 
@@ -72,6 +78,42 @@
   
   .text-shadow {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .kente-border {
+    position: relative;
+  }
+  
+  .kente-border::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 8px;
+    background: repeating-linear-gradient(
+      to right,
+      var(--kente-gold) 0%,
+      var(--kente-gold) 10%,
+      var(--kente-red) 10%,
+      var(--kente-red) 20%,
+      var(--kente-black) 20%,
+      var(--kente-black) 30%,
+      var(--kente-green) 30%,
+      var(--kente-green) 40%,
+      var(--kente-gold) 40%,
+      var(--kente-gold) 50%,
+      var(--kente-red) 50%,
+      var(--kente-red) 60%,
+      var(--kente-black) 60%,
+      var(--kente-black) 70%,
+      var(--kente-green) 70%,
+      var(--kente-green) 80%,
+      var(--kente-gold) 80%,
+      var(--kente-gold) 90%,
+      var(--kente-red) 90%,
+      var(--kente-red) 100%
+    );
   }
 }
 

@@ -3,6 +3,7 @@ import { Toaster } from "sonner";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import FeaturedMenu from "@/components/FeaturedMenu";
+import CustomerDelight from "@/components/CustomerDelight";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
 
@@ -12,6 +13,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <FeaturedMenu />
+      <CustomerDelight />
       <About />
       <Footer />
       <Toaster position="top-right" />

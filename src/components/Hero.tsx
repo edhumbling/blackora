@@ -19,6 +19,13 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40" />
       </div>
 
+      {/* Kente pattern decorative elements */}
+      <div className="absolute inset-0 z-1 pointer-events-none">
+        <div className="absolute top-0 left-0 w-32 h-full bg-[url('https://ik.imagekit.io/humbling/kente-pattern-vertical.png')] opacity-15"></div>
+        <div className="absolute top-0 right-0 w-32 h-full bg-[url('https://ik.imagekit.io/humbling/kente-pattern-vertical.png')] opacity-15"></div>
+        <div className="absolute bottom-0 left-0 w-full h-16 bg-[url('https://ik.imagekit.io/humbling/kente-pattern-horizontal.png')] opacity-15"></div>
+      </div>
+
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-3xl">
           <span className="inline-block px-3 py-1 bg-gold-500/20 backdrop-blur-sm border border-gold-500/30 rounded-full text-sm font-medium text-white mb-6 animate-fade-in">
@@ -55,7 +62,7 @@ const Hero = () => {
       
       {/* Decorative elements */}
       <div className="absolute bottom-10 right-10 hidden lg:block">
-        <div className="glass-dark p-6 rounded-lg max-w-xs animate-fade-in-right">
+        <div className="glass-dark p-6 rounded-lg max-w-xs animate-fade-in-right border border-gold-500/20">
           <p className="text-white/90 text-sm italic mb-2">
             "The most authentic African flavors I've experienced outside the continent."
           </p>
