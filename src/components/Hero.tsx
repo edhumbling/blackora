@@ -6,11 +6,14 @@ import { ArrowRight } from "lucide-react";
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20">
-      {/* Background image with overlay */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800&auto=format&fit=crop&q=80&ixlib=rb-4.0.3"
-          alt="African cuisine"
+      {/* Video background with overlay */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <video
+          src="https://ik.imagekit.io/humbling/food/fufuasap_gh_1690205376_3153992921375879618_7928367704.mp4?updatedAt=1741186322871"
+          autoPlay
+          muted
+          loop
+          playsInline
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40" />
