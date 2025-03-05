@@ -15,9 +15,19 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#1A1A1A] text-white">
+    <footer className="relative text-white">
+      {/* Background image with overlay */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://ik.imagekit.io/humbling/image%20(4).jpg?updatedAt=1741189571893" 
+          alt="Footer background" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+      </div>
+      
       {/* Newsletter Section */}
-      <div className="container mx-auto px-4 sm:px-6 py-16">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-16">
         <div className="max-w-xl mx-auto text-center mb-10">
           <h3 className="text-2xl md:text-3xl font-serif font-semibold mb-4">
             Join Our Culinary Journey
@@ -167,7 +177,7 @@ const Footer = () => {
       </div>
       
       {/* Bottom Bar */}
-      <div className="border-t border-white/10">
+      <div className="relative z-10 border-t border-white/10">
         <div className="container mx-auto px-4 sm:px-6 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-white/50 text-sm">
