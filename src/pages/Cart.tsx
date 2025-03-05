@@ -10,12 +10,12 @@ import { Minus, Plus, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 
 const Cart = () => {
-  const { cart, removeItem, updateQuantity, clearCart, totalPrice } = useCart();
+  const { items, removeItem, updateQuantity, clearCart, subtotal } = useCart();
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
   
   const handleCheckout = () => {
-    if (cart.length === 0) {
+    if (items.length === 0) {
       toast.error("Your cart is empty");
       return;
     }
@@ -37,7 +37,7 @@ const Cart = () => {
         <div className="container mx-auto">
           <h1 className="text-3xl md:text-4xl font-serif font-bold mb-8">Your Cart</h1>
           
-          {cart.length === 0 ? (
+          {items.length === 0 ? (
             <div className="text-center py-16">
               <h2 className="text-2xl font-medium mb-4">Your cart is empty</h2>
               <p className="text-muted-foreground mb-8">
@@ -56,12 +56,12 @@ const Cart = () => {
                   <div className="p-6">
                     <div className="flow-root">
                       <ul className="divide-y">
-                        {cart.map((item) => (
-                          <li key={item.id} className="py-6 flex">
+                        {items.map((item) => (
+                          <li key={item.menuItem.id} className="py-6 flex">
                             <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border">
                               <img
-                                src={item.image}
-                                alt={item.name}
+                                src={item.menuItem.image}
+                                alt={item.menuItem.name}
                                 className="h-full w-full object-cover object-center"
                               />
                             </div>
@@ -69,10 +69,10 @@ const Cart = () => {
                             <div className="ml-4 flex flex-1 flex-col">
                               <div>
                                 <div className="flex justify-between text-base font-medium">
-                                  <h3>{item.name}</h3>
-                                  <p className="ml-4">${(item.price * item.quantity).toFixed(2)}</p>
+                                  <h3>{item.menuItem.name}</h3>
+                                  <p className="ml-4">${(item.menuItem.price * item.quantity).toFixed(2)}</p>
                                 </div>
-                                <p className="mt-1 text-sm text-muted-foreground line-clamp-1">{item.description}</p>
+                                <p className="mt-1 text-sm text-muted-foreground line-clamp-1">{item.menuItem.description}</p>
                               </div>
                               
                               <div className="flex flex-1 items-end justify-between mt-4">
@@ -80,7 +80,7 @@ const Cart = () => {
                                   <Button
                                     variant="ghost"
                                     size="icon"
-                                    onClick={() => updateQuantity(item.id, Math.max(1, item.quantity - 1))}
+                                    onClick={() => updateQuantity(item.menuItem.id, Math.max(1, item.quantity - 1))}
                                     disabled={item.quantity <= 1}
                                     className="h-8 w-8"
                                   >
@@ -90,7 +90,7 @@ const Cart = () => {
                                   <Button
                                     variant="ghost"
                                     size="icon"
-                                    onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                                    onClick={() => updateQuantity(item.menuItem.id, item.quantity + 1)}
                                     className="h-8 w-8"
                                   >
                                     <Plus className="h-3 w-3" />
@@ -100,7 +100,7 @@ const Cart = () => {
                                 <Button
                                   variant="ghost"
                                   size="sm"
-                                  onClick={() => removeItem(item.id)}
+                                  onClick={() => removeItem(item.menuItem.id)}
                                   className="text-destructive hover:text-destructive/90"
                                 >
                                   <Trash2 className="h-4 w-4 mr-1" />
@@ -136,7 +136,7 @@ const Cart = () => {
                     <div className="space-y-4">
                       <div className="flex justify-between border-b pb-4">
                         <span className="text-muted-foreground">Subtotal</span>
-                        <span>${totalPrice.toFixed(2)}</span>
+                        <span>${subtotal.toFixed(2)}</span>
                       </div>
                       
                       <div className="flex justify-between border-b pb-4">
@@ -146,19 +146,19 @@ const Cart = () => {
                       
                       <div className="flex justify-between border-b pb-4">
                         <span className="text-muted-foreground">Tax</span>
-                        <span>${(totalPrice * 0.05).toFixed(2)}</span>
+                        <span>${(subtotal * 0.05).toFixed(2)}</span>
                       </div>
                       
                       <div className="flex justify-between font-semibold">
                         <span>Total</span>
-                        <span>${(totalPrice + 5 + totalPrice * 0.05).toFixed(2)}</span>
+                        <span>${(subtotal + 5 + subtotal * 0.05).toFixed(2)}</span>
                       </div>
                     </div>
                     
                     <Button
                       className="w-full mt-6 bg-gold-500 hover:bg-gold-600 text-white"
                       onClick={handleCheckout}
-                      disabled={isLoading || cart.length === 0}
+                      disabled={isLoading || items.length === 0}
                     >
                       {isLoading ? "Processing..." : "Proceed to Checkout"}
                     </Button>

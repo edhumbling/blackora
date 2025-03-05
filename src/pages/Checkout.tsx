@@ -15,7 +15,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 const CheckoutPage = () => {
-  const { cart, totalPrice, clearCart } = useCart();
+  const { items, subtotal, clearCart } = useCart();
   const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [paymentMethod, setPaymentMethod] = useState("card");
@@ -23,7 +23,7 @@ const CheckoutPage = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (cart.length === 0) {
+    if (items.length === 0) {
       toast.error("Your cart is empty");
       return;
     }
@@ -40,8 +40,8 @@ const CheckoutPage = () => {
 
   // Calculate total with shipping and tax
   const shipping = 5;
-  const tax = totalPrice * 0.05;
-  const orderTotal = totalPrice + shipping + tax;
+  const tax = subtotal * 0.05;
+  const orderTotal = subtotal + shipping + tax;
 
   return (
     <main className="min-h-screen">
@@ -236,16 +236,16 @@ const CheckoutPage = () => {
                   <h2 className="text-xl font-medium mb-6">Order Summary</h2>
                   
                   <div className="divide-y space-y-4">
-                    {cart.map((item) => (
-                      <div key={item.id} className="flex justify-between py-4">
+                    {items.map((item) => (
+                      <div key={item.menuItem.id} className="flex justify-between py-4">
                         <div className="flex">
                           <div className="flex-1 ml-3">
-                            <p className="font-medium">{item.name}</p>
+                            <p className="font-medium">{item.menuItem.name}</p>
                             <p className="text-sm text-muted-foreground">Qty: {item.quantity}</p>
                           </div>
                         </div>
                         <div className="text-right">
-                          <p className="font-medium">${(item.price * item.quantity).toFixed(2)}</p>
+                          <p className="font-medium">${(item.menuItem.price * item.quantity).toFixed(2)}</p>
                         </div>
                       </div>
                     ))}
@@ -256,7 +256,7 @@ const CheckoutPage = () => {
                   <div className="space-y-4">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Subtotal</span>
-                      <span>${totalPrice.toFixed(2)}</span>
+                      <span>${subtotal.toFixed(2)}</span>
                     </div>
                     
                     <div className="flex justify-between">
@@ -281,7 +281,7 @@ const CheckoutPage = () => {
                     type="submit"
                     className="w-full mt-8 bg-gold-500 hover:bg-gold-600 text-white"
                     onClick={handleSubmit}
-                    disabled={isSubmitting || cart.length === 0}
+                    disabled={isSubmitting || items.length === 0}
                   >
                     {isSubmitting ? "Processing..." : "Place Order"}
                   </Button>
