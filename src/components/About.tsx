@@ -14,7 +14,7 @@ const About = () => {
             
             <div className="flex items-center gap-4 mb-6">
               <img 
-                src="https://ik.imagekit.io/humbling/food/eatwithafia_1614699778_2520606889971483910_2014293526.jpg?updatedAt=1741190695139" 
+                src="https://ik.imagekit.io/humbling/food/SnapBG.ai_1741191404896.png?updatedAt=1741191425068" 
                 alt="Hardy Yusif - Founder" 
                 className="w-20 h-20 rounded-full object-cover border-2 border-gold-400"
               />

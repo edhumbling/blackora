@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -181,7 +180,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 sm:px-6 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-white/50 text-sm">
-              © 2024 Blackora. All rights reserved.
+              © Blackora. All rights reserved.
             </div>
             <div className="flex gap-4 text-sm">
               <Link to="/privacy" className="text-white/50 hover:text-gold-400 transition-colors">
