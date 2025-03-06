@@ -2,6 +2,7 @@
 import { Toaster } from "sonner";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import FeaturedFufu from "@/components/FeaturedFufu";
 import FeaturedMenu from "@/components/FeaturedMenu";
 import CustomerDelight from "@/components/CustomerDelight";
 import About from "@/components/About";
@@ -14,6 +15,7 @@ const Index = () => {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
+      <FeaturedFufu />
       <FeaturedMenu />
       <CustomerDelight />
       <About />
