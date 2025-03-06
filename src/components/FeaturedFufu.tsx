@@ -1,8 +1,8 @@
-
 import { useRef, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 const carouselItems = [
   {
@@ -36,7 +36,6 @@ const FeaturedFufu = () => {
   const carouselRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   
-  // Auto-scroll the carousel
   useEffect(() => {
     const carousel = carouselRef.current;
     if (!carousel) return;
@@ -59,14 +58,11 @@ const FeaturedFufu = () => {
       }
     };
     
-    // Set interval for auto-scroll
     scrollInterval = setInterval(scrollToNext, 5000);
     
-    // Clean up
     return () => clearInterval(scrollInterval);
   }, []);
   
-  // Ensure video plays and loops
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.play().catch(e => console.error("Video autoplay failed:", e));
@@ -90,7 +86,6 @@ const FeaturedFufu = () => {
 
   return (
     <section className="relative py-20 overflow-hidden">
-      {/* Video Background */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <video
           ref={videoRef}
@@ -112,7 +107,6 @@ const FeaturedFufu = () => {
           </p>
         </div>
         
-        {/* Carousel Navigation */}
         <div className="flex justify-end gap-2 mb-6">
           <Button 
             variant="outline" 
@@ -132,7 +126,6 @@ const FeaturedFufu = () => {
           </Button>
         </div>
         
-        {/* Carousel */}
         <div 
           ref={carouselRef}
           className="flex overflow-x-auto gap-6 pb-8 scrollbar-hide scroll-smooth"
@@ -158,14 +151,15 @@ const FeaturedFufu = () => {
           ))}
         </div>
         
-        {/* Call to action */}
         <div className="mt-12 text-center">
-          <Button 
-            className="bg-gold-500 hover:bg-gold-600 text-white"
-            size="lg"
-          >
-            Explore Our Fufu Menu
-          </Button>
+          <Link to="/menu">
+            <Button 
+              className="bg-gold-500 hover:bg-gold-600 text-white"
+              size="lg"
+            >
+              Explore Other Dishes
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

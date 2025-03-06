@@ -18,7 +18,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Fufu & Egusi Soup",
         description: "Smooth, dough-like fufu served with rich and savory egusi soup made from ground melon seeds, leafy vegetables, and protein of choice.",
         price: 21.99,
-        image: "https://ik.imagekit.io/humbling/f67513d9dbea376d1ac4fb10187b387cf802abbc7deae9587897ccd0dba8cd1f5d53c31f8ba30972a9ff10eedf379300f378bb08aba6d13feb1b6e15d9513e83586dfcc1f11702cb28f982ef45dd05ae?tr=w-600,h-600,c-at_max",
+        image: "https://ik.imagekit.io/humbling/food/fufuasap_gh_1706595816_3291486728131350455_7928367704.jpg?updatedAt=1741186116468",
         category: "main",
         popular: true
       },
@@ -27,7 +27,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Jollof Rice",
         description: "Traditional West African rice dish cooked in a rich, flavorful tomato and pepper sauce. Served with grilled chicken.",
         price: 19.99,
-        image: "https://images.unsplash.com/photo-1634632109496-47b9b57db94b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        image: "https://ik.imagekit.io/humbling/food/chefabbys_1734083072_3522066547500215715_35533844416.jpg?updatedAt=1741191185444",
         category: "main",
         popular: true,
         spicy: true
@@ -37,7 +37,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Fufu with Light Soup",
         description: "Hand-pounded fufu served with light soup made with tomatoes, peppers, and your choice of fish, chicken, or beef.",
         price: 22.99,
-        image: "https://ik.imagekit.io/humbling/f67513d9dbea376d1ac4fb10187b387cf802abbc7deae9587897ccd0dba8cd1f5d53c31f8ba30972a9ff10eedf379300f378bb08aba6d13feb1b6e15d9513e83586dfcc1f11702cb28f982ef45dd05ae?tr=w-600,h-600,c-at_max",
+        image: "https://ik.imagekit.io/humbling/food/fufuasap_gh_1676193961_3036457483535128775_7928367704.jpg?updatedAt=1741186099569",
         category: "main",
         spicy: true
       },
@@ -46,7 +46,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Waakye",
         description: "Ghanaian dish of rice and beans cooked with dried millet leaves, served with special waakye sauce, boiled eggs, and fried plantains.",
         price: 18.99,
-        image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        image: "https://ik.imagekit.io/humbling/food/munchaway_gh_1730531172_3492599151217979179_57557695795.jpg?updatedAt=1741332618778",
         category: "main"
       }
     ]
@@ -61,7 +61,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Suya Skewers",
         description: "Spicy grilled beef skewers marinated in a peanut-based spice blend. Served with fresh onions and tomatoes.",
         price: 17.99,
-        image: "https://images.unsplash.com/photo-1627662056950-d964092901ab?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        image: "https://ik.imagekit.io/humbling/food/chef_zouheir_1732450422_3508370885868664699_4927714148.webp?updatedAt=1741192053938",
         category: "appetizer",
         popular: true,
         spicy: true
@@ -71,7 +71,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Kelewele",
         description: "Spicy fried plantains seasoned with ginger, cayenne pepper, and other spices. A popular Ghanaian street food.",
         price: 12.99,
-        image: "https://images.unsplash.com/photo-1598511726623-d2e9996e1ddb?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        image: "https://ik.imagekit.io/humbling/food/eatwithafia_1614699778_2520606889971483910_2014293526.jpg?updatedAt=1741190695139",
         category: "appetizer",
         vegetarian: true,
         spicy: true
@@ -81,7 +81,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Moin Moin",
         description: "Steamed bean pudding made from blended black-eyed peas, peppers, and spices. Soft and savory.",
         price: 13.99,
-        image: "https://images.unsplash.com/photo-1642769881638-49a3d7546dc2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        image: "https://ik.imagekit.io/humbling/food/msjemima_ng_1741317693_3624387598661773644_1423578390.jpg?updatedAt=1741332619169",
         category: "appetizer",
         vegetarian: true
       }
@@ -97,7 +97,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Fried Plantains",
         description: "Sweet, ripe plantains, fried until golden brown. A perfect sweet contrast to savory dishes.",
         price: 8.99,
-        image: "https://images.unsplash.com/photo-1610325261376-d4c2d7e97f96?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        image: "https://ik.imagekit.io/humbling/food/eatwithafia_1614699778_2520606889971483910_2014293526.jpg?updatedAt=1741190695139",
         category: "side",
         vegetarian: true,
         vegan: true,
@@ -108,7 +108,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Jollof Rice (Side)",
         description: "A smaller portion of our signature jollof rice.",
         price: 9.99,
-        image: "https://images.unsplash.com/photo-1634632109496-47b9b57db94b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        image: "https://ik.imagekit.io/humbling/food/chefabbys_1734083072_3522066547500215715_35533844416.jpg?updatedAt=1741191185444",
         category: "side",
         spicy: true
       },
@@ -117,7 +117,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Garri",
         description: "Fermented cassava flour, ready to be mixed with water to create a smooth, dough-like consistency.",
         price: 6.99,
-        image: "https://images.unsplash.com/photo-1605186620429-1ece681a6918?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        image: "https://ik.imagekit.io/humbling/food/msjemima_ng_1734243994_3522969963963266594_1423578390.jpg?updatedAt=1741332618517",
         category: "side",
         vegetarian: true,
         vegan: true,
@@ -135,7 +135,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Zobo (Hibiscus Drink)",
         description: "Refreshing Nigerian drink made from dried hibiscus flowers, flavored with pineapple and ginger.",
         price: 5.99,
-        image: "https://images.unsplash.com/photo-1571950006418-f226dc106482?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        image: "https://ik.imagekit.io/humbling/food/sugarcane_juicer_1651863876_2819702889559809063_3598918405.jpg?updatedAt=1741332618646",
         category: "beverage",
         vegetarian: true,
         vegan: true,
@@ -146,7 +146,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Palm Wine",
         description: "Traditional African alcoholic beverage made from the sap of palm trees. Sweet and mildly alcoholic.",
         price: 9.99,
-        image: "https://images.unsplash.com/photo-1630387748855-8f618480adf6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        image: "https://ik.imagekit.io/humbling/food/msjemima_ng_1734602580_3525850968261972217_1423578390.jpg?updatedAt=1741332618387",
         category: "beverage",
         vegetarian: true,
         vegan: true,
@@ -157,7 +157,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Chapman",
         description: "Nigerian cocktail made with a blend of Fanta, Sprite, Angostura bitters, and blackcurrant.",
         price: 7.99,
-        image: "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        image: "https://ik.imagekit.io/humbling/food/naijafoodies_1681941183_3071744433142772050_1290173.jpg?updatedAt=1741332618297",
         category: "beverage",
         vegetarian: true
       }
@@ -173,7 +173,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Puff Puff",
         description: "Deep-fried dough balls, lightly sweetened and served warm. Similar to beignets or doughnuts.",
         price: 8.99,
-        image: "https://images.unsplash.com/photo-1635044662684-4c67040119c4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        image: "https://ik.imagekit.io/humbling/food/msjemima_ng_1709911329_3318775064962733644_1423578390.jpg?updatedAt=1741332618867",
         category: "dessert",
         vegetarian: true
       },
@@ -182,7 +182,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Coconut Cake",
         description: "Moist cake made with fresh coconut and topped with coconut flakes.",
         price: 10.99,
-        image: "https://images.unsplash.com/photo-1605291526263-779cfd52c8ac?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        image: "https://ik.imagekit.io/humbling/food/msjemima_ng_1694801044_3192835559608631320_1423578390.jpg?updatedAt=1741332619055",
         category: "dessert",
         vegetarian: true
       },
@@ -191,7 +191,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Chin Chin",
         description: "Crunchy, sweet fried pastry popular in West Africa. Flavored with nutmeg and cinnamon.",
         price: 7.99,
-        image: "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+        image: "https://ik.imagekit.io/humbling/food/msjemima_ng_1730192429_3489647559010823979_1423578390.jpg?updatedAt=1741332618981",
         category: "dessert",
         vegetarian: true
       }

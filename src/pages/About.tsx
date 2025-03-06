@@ -61,12 +61,17 @@ const AboutPage = () => {
                 each dish we serve carries the essence of African hospitality and the joy of shared meals."
               </p>
             </div>
-            <div className="relative h-96 rounded-lg overflow-hidden">
-              <img 
-                src="https://ik.imagekit.io/humbling/food/fufuasap_gh_1691324232_3163379401047044800_7928367704.jpg?updatedAt=1741186114809" 
-                alt="Chef Hardy Yusif"
-                className="w-full h-full object-cover"
-              />
+            <div className="relative flex justify-center items-center">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-gold-300 via-gold-400 to-gold-300 blur-md animate-pulse"></div>
+              <div className="relative p-1 rounded-full bg-gradient-to-r from-gold-500 to-gold-300">
+                <div className="p-1 bg-white/10 rounded-full backdrop-blur-sm">
+                  <img 
+                    src="https://ik.imagekit.io/humbling/food/SnapBG.ai_1741191404896.png?updatedAt=1741191425068" 
+                    alt="Chef Hardy Yusif"
+                    className="w-80 h-80 object-cover rounded-full border-2 border-gold-300"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
