@@ -99,22 +99,22 @@ const Careers = () => {
   return (
     <main className="min-h-screen">
       <Navbar />
-      
+
       <div className="pt-32 pb-20 px-4 md:px-6 lg:px-8">
         <div className="container mx-auto">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <h1 className="text-3xl md:text-4xl font-serif font-bold mb-4">Join Our Team</h1>
               <p className="text-muted-foreground max-w-3xl mx-auto">
-                Blackora is more than just a restaurant – we're a family dedicated to sharing the rich flavors and 
-                cultural heritage of African cuisine. If you're passionate about food, hospitality, and creating 
+                Authentic African Foods is more than just a restaurant – we're a family dedicated to sharing the rich flavors and
+                cultural heritage of African cuisine. If you're passionate about food, hospitality, and creating
                 memorable experiences, we'd love to hear from you.
               </p>
             </div>
-            
+
             <div className="mb-16">
               <h2 className="text-2xl font-serif font-semibold mb-6">Current Openings</h2>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {jobOpenings.map((job, index) => (
                   <div key={index} className="border rounded-lg p-6 hover:shadow-md transition-shadow">
@@ -127,12 +127,12 @@ const Careers = () => {
                     <h3 className="text-xl font-medium mb-2">{job.title}</h3>
                     <p className="text-sm text-muted-foreground mb-3">Department: {job.department}</p>
                     <p className="text-muted-foreground mb-4">{job.description}</p>
-                    <Button 
-                      variant="outline" 
+                    <Button
+                      variant="outline"
                       className="w-full border-gold-300 text-gold-700 hover:bg-gold-50"
                       onClick={() => {
                         setFormData(prev => ({ ...prev, position: job.title }));
-                        document.getElementById('application-form')?.scrollIntoView({ 
+                        document.getElementById('application-form')?.scrollIntoView({
                           behavior: 'smooth',
                           block: 'start'
                         });
@@ -144,10 +144,10 @@ const Careers = () => {
                 ))}
               </div>
             </div>
-            
+
             <div id="application-form" className="bg-secondary/50 rounded-lg p-8">
               <h2 className="text-2xl font-serif font-semibold mb-6">Apply Now</h2>
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
@@ -163,7 +163,7 @@ const Careers = () => {
                       placeholder="John Doe"
                     />
                   </div>
-                  
+
                   <div className="space-y-2">
                     <label htmlFor="email" className="block text-sm font-medium">
                       Email Address *
@@ -178,7 +178,7 @@ const Careers = () => {
                       placeholder="johndoe@example.com"
                     />
                   </div>
-                  
+
                   <div className="space-y-2">
                     <label htmlFor="phone" className="block text-sm font-medium">
                       Phone Number *
@@ -193,7 +193,7 @@ const Careers = () => {
                       placeholder="(250) 123-4567"
                     />
                   </div>
-                  
+
                   <div className="space-y-2">
                     <label htmlFor="position" className="block text-sm font-medium">
                       Position *
@@ -214,7 +214,7 @@ const Careers = () => {
                     </select>
                   </div>
                 </div>
-                
+
                 <div className="space-y-2">
                   <label htmlFor="resume" className="block text-sm font-medium">
                     Resume/CV (PDF) *
@@ -231,7 +231,7 @@ const Careers = () => {
                     Max file size: 5MB. Accepted format: PDF.
                   </p>
                 </div>
-                
+
                 <div className="space-y-2">
                   <label htmlFor="coverLetter" className="block text-sm font-medium">
                     Cover Letter
@@ -241,14 +241,14 @@ const Careers = () => {
                     name="coverLetter"
                     value={formData.coverLetter}
                     onChange={handleChange}
-                    placeholder="Tell us why you're interested in joining Blackora and what you'll bring to our team..."
+                    placeholder="Tell us why you're interested in joining Authentic African Foods and what you'll bring to our team..."
                     rows={5}
                   />
                 </div>
-                
+
                 <div className="pt-4">
-                  <Button 
-                    type="submit" 
+                  <Button
+                    type="submit"
                     className="bg-gold-500 hover:bg-gold-600 text-white"
                   >
                     Submit Application
@@ -256,7 +256,7 @@ const Careers = () => {
                 </div>
               </form>
             </div>
-            
+
             <div className="mt-16 text-center">
               <h2 className="text-2xl font-serif font-semibold mb-4">Why Work With Us?</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
@@ -283,7 +283,7 @@ const Careers = () => {
           </div>
         </div>
       </div>
-      
+
       <Footer />
       <Toaster position="top-right" />
     </main>

@@ -17,14 +17,14 @@ const Footer = () => {
     <footer className="relative text-white">
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="https://ik.imagekit.io/humbling/image%20(4).jpg?updatedAt=1741189571893" 
-          alt="Footer background" 
+        <img
+          src="https://ik.imagekit.io/humbling/image%20(4).jpg?updatedAt=1741189571893"
+          alt="Footer background"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
       </div>
-      
+
       {/* Newsletter Section */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 py-16">
         <div className="max-w-xl mx-auto text-center mb-10">
@@ -35,33 +35,33 @@ const Footer = () => {
             Subscribe to our newsletter for exclusive offers, recipes, and updates.
           </p>
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
-            <Input 
-              type="email" 
-              placeholder="Your email address" 
+            <Input
+              type="email"
+              placeholder="Your email address"
               required
               className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
             />
-            <Button 
-              type="submit" 
+            <Button
+              type="submit"
               className="bg-gold-500 hover:bg-gold-600 text-white shrink-0"
             >
               Subscribe
             </Button>
           </form>
         </div>
-        
+
         <hr className="border-white/10 my-10" />
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* About */}
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <img 
-                src="https://ik.imagekit.io/humbling/SnapBG.ai_1741181355169.png?updatedAt=1741181376482" 
-                alt="Blackora" 
+              <img
+                src="https://ik.imagekit.io/humbling/SnapBG.ai_1741181355169.png?updatedAt=1741181376482"
+                alt="Authentic African Foods"
                 className="h-10 w-auto"
               />
-              <span className="text-xl font-serif font-semibold">Blackora</span>
+              <span className="text-xl font-serif font-semibold">Authentic African Foods</span>
             </div>
             <p className="text-white/70 mb-6">
               Experience the authentic flavors of African cuisine in the heart of Prince George, Canada.
@@ -84,7 +84,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          
+
           {/* Contact */}
           <div>
             <h4 className="text-lg font-serif font-medium mb-6">Contact Us</h4>
@@ -101,7 +101,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-gold-400 mr-3 shrink-0" />
-                <span className="text-white/70">info@blackora.com</span>
+                <span className="text-white/70">info@authenticafricanfoods.com</span>
               </li>
               <li className="flex items-start">
                 <Clock className="h-5 w-5 text-gold-400 mr-3 mt-0.5 shrink-0" />
@@ -113,7 +113,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           {/* Quick Links */}
           <div>
             <h4 className="text-lg font-serif font-medium mb-6">Quick Links</h4>
@@ -145,7 +145,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           {/* Policies */}
           <div>
             <h4 className="text-lg font-serif font-medium mb-6">Policies</h4>
@@ -174,13 +174,13 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Bottom Bar */}
       <div className="relative z-10 border-t border-white/10">
         <div className="container mx-auto px-4 sm:px-6 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-white/50 text-sm">
-              © Blackora. All rights reserved.
+              © Authentic African Foods. All rights reserved.
             </div>
             <div className="flex gap-4 text-sm">
               <Link to="/privacy" className="text-white/50 hover:text-gold-400 transition-colors">

@@ -20,7 +20,7 @@ const AuthModal = ({ isOpen, onClose }: AuthModalProps) => {
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    
+
     // Simulate API call
     setTimeout(() => {
       setIsLoading(false);
@@ -32,7 +32,7 @@ const AuthModal = ({ isOpen, onClose }: AuthModalProps) => {
   const handleSignUp = (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    
+
     // Simulate API call
     setTimeout(() => {
       setIsLoading(false);
@@ -46,16 +46,16 @@ const AuthModal = ({ isOpen, onClose }: AuthModalProps) => {
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle className="text-center font-serif text-2xl">
-            Welcome to Blackora
+            Welcome to Authentic African Foods
           </DialogTitle>
         </DialogHeader>
-        
+
         <Tabs defaultValue="login" value={activeTab} onValueChange={setActiveTab} className="w-full">
           <TabsList className="grid w-full grid-cols-2 mb-6">
             <TabsTrigger value="login">Login</TabsTrigger>
             <TabsTrigger value="signup">Sign Up</TabsTrigger>
           </TabsList>
-          
+
           <TabsContent value="login">
             <form onSubmit={handleLogin} className="space-y-4">
               <div className="space-y-2">
@@ -71,16 +71,16 @@ const AuthModal = ({ isOpen, onClose }: AuthModalProps) => {
                 </div>
                 <Input id="password" type="password" required />
               </div>
-              <Button 
-                type="submit" 
-                className="w-full bg-gold-500 hover:bg-gold-600" 
+              <Button
+                type="submit"
+                className="w-full bg-gold-500 hover:bg-gold-600"
                 disabled={isLoading}
               >
                 {isLoading ? "Logging in..." : "Login"}
               </Button>
             </form>
           </TabsContent>
-          
+
           <TabsContent value="signup">
             <form onSubmit={handleSignUp} className="space-y-4">
               <div className="space-y-2">
@@ -99,9 +99,9 @@ const AuthModal = ({ isOpen, onClose }: AuthModalProps) => {
                 <Label htmlFor="confirm-password">Confirm Password</Label>
                 <Input id="confirm-password" type="password" required />
               </div>
-              <Button 
-                type="submit" 
-                className="w-full bg-gold-500 hover:bg-gold-600" 
+              <Button
+                type="submit"
+                className="w-full bg-gold-500 hover:bg-gold-600"
                 disabled={isLoading}
               >
                 {isLoading ? "Creating account..." : "Create Account"}
@@ -111,7 +111,7 @@ const AuthModal = ({ isOpen, onClose }: AuthModalProps) => {
         </Tabs>
 
         <div className="mt-4 text-center text-sm text-muted-foreground">
-          By continuing, you agree to Blackora's Terms of Service and Privacy Policy.
+          By continuing, you agree to Authentic African Foods' Terms of Service and Privacy Policy.
         </div>
       </DialogContent>
     </Dialog>

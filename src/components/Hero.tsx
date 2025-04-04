@@ -31,15 +31,15 @@ const Hero = () => {
           <span className="inline-block px-3 py-1 bg-gold-500/20 backdrop-blur-sm border border-gold-500/30 rounded-full text-sm font-medium text-white mb-6 animate-fade-in">
             Prince George, Canada
           </span>
-          
+
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight animate-fade-in">
             Experience <span className="text-gold-400">Authentic African</span> Cuisine
           </h1>
-          
+
           <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl animate-fade-in">
-            Indulge in the rich flavors and cultural heritage of African cuisine, crafted with passion and tradition at Blackora.
+            Indulge in the rich flavors and cultural heritage of African cuisine, crafted with passion and tradition at Authentic African Foods.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in">
             <Link to="/menu">
               <Button size="lg" className="bg-gold-500 hover:bg-gold-600 text-white">
@@ -48,8 +48,8 @@ const Hero = () => {
               </Button>
             </Link>
             <Link to="/reservations">
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="bg-white text-gold-600 hover:bg-white/90 border-2 border-gold-500 shadow-lg backdrop-blur-sm animate-pulse"
               >
                 Make Reservation
@@ -58,7 +58,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Decorative elements */}
       <div className="absolute bottom-10 right-10 hidden lg:block">
         <div className="glass-dark p-6 rounded-lg max-w-xs animate-fade-in-right border border-gold-500/20">

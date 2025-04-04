@@ -25,7 +25,7 @@ const Reservations = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate API call
     setTimeout(() => {
       setIsSubmitting(false);
@@ -37,17 +37,17 @@ const Reservations = () => {
   return (
     <main className="min-h-screen">
       <Navbar />
-      
+
       <div className="pt-32 pb-20 px-4 md:px-6 lg:px-8">
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold mb-4">Make a Reservation</h1>
               <p className="text-muted-foreground max-w-xl mx-auto">
-                Reserve a table at Blackora and experience authentic African cuisine in an elegant setting.
+                Reserve a table at Authentic African Foods and experience authentic African cuisine in an elegant setting.
               </p>
             </div>
-            
+
             <div className="bg-card shadow-lg rounded-lg border p-6 md:p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -55,17 +55,17 @@ const Reservations = () => {
                     <Label htmlFor="name">Full Name</Label>
                     <Input id="name" placeholder="Your full name" required />
                   </div>
-                  
+
                   <div className="space-y-2">
                     <Label htmlFor="email">Email Address</Label>
                     <Input id="email" type="email" placeholder="your@email.com" required />
                   </div>
-                  
+
                   <div className="space-y-2">
                     <Label htmlFor="phone">Phone Number</Label>
                     <Input id="phone" placeholder="Your phone number" required />
                   </div>
-                  
+
                   <div className="space-y-2">
                     <Label htmlFor="guests">Number of Guests</Label>
                     <Select required>
@@ -83,7 +83,7 @@ const Reservations = () => {
                     </Select>
                   </div>
                 </div>
-                
+
                 <div className="space-y-2">
                   <Label>Date</Label>
                   <Popover>
@@ -110,7 +110,7 @@ const Reservations = () => {
                     </PopoverContent>
                   </Popover>
                 </div>
-                
+
                 <div className="space-y-2">
                   <Label>Time Slot</Label>
                   <RadioGroup defaultValue="6:00pm" className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
@@ -122,19 +122,19 @@ const Reservations = () => {
                     ))}
                   </RadioGroup>
                 </div>
-                
+
                 <div className="space-y-2">
                   <Label htmlFor="notes">Special Requests</Label>
-                  <Textarea 
-                    id="notes" 
+                  <Textarea
+                    id="notes"
                     placeholder="Any dietary requirements or special requests"
                     className="resize-none"
                     rows={3}
                   />
                 </div>
-                
-                <Button 
-                  type="submit" 
+
+                <Button
+                  type="submit"
                   className="w-full bg-gold-500 hover:bg-gold-600 text-white"
                   disabled={isSubmitting}
                 >
@@ -145,7 +145,7 @@ const Reservations = () => {
           </div>
         </div>
       </div>
-      
+
       <Footer />
       <Toaster position="top-right" />
     </main>

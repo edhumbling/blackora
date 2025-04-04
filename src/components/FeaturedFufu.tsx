@@ -13,7 +13,7 @@ const carouselItems = [
   {
     id: 2,
     title: "Our Signature Dish",
-    description: "At Blackora, Fufu is our core culinary offering, representing the heart of West African cuisine. We serve it with a variety of traditional soups including Light Soup, Groundnut Soup, and our famous Egusi."
+    description: "At Authentic African Foods, Fufu is our core culinary offering, representing the heart of West African cuisine. We serve it with a variety of traditional soups including Light Soup, Groundnut Soup, and our famous Egusi."
   },
   {
     id: 3,
@@ -35,21 +35,21 @@ const carouselItems = [
 const FeaturedFufu = () => {
   const carouselRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
-  
+
   useEffect(() => {
     const carousel = carouselRef.current;
     if (!carousel) return;
-    
+
     let scrollInterval: NodeJS.Timeout;
     let currentIndex = 0;
-    
+
     const scrollToNext = () => {
       const items = carousel.querySelectorAll('.carousel-item');
       if (!items.length) return;
-      
+
       currentIndex = (currentIndex + 1) % items.length;
       const nextItem = items[currentIndex] as HTMLElement;
-      
+
       if (nextItem) {
         carousel.scrollTo({
           left: nextItem.offsetLeft - carousel.offsetWidth / 2 + nextItem.offsetWidth / 2,
@@ -57,27 +57,27 @@ const FeaturedFufu = () => {
         });
       }
     };
-    
+
     scrollInterval = setInterval(scrollToNext, 5000);
-    
+
     return () => clearInterval(scrollInterval);
   }, []);
-  
+
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.play().catch(e => console.error("Video autoplay failed:", e));
     }
   }, []);
-  
+
   const scroll = (direction: 'left' | 'right') => {
     const carousel = carouselRef.current;
     if (!carousel) return;
-    
+
     const scrollAmount = carousel.clientWidth * 0.8;
-    const scrollPosition = direction === 'left' 
-      ? carousel.scrollLeft - scrollAmount 
+    const scrollPosition = direction === 'left'
+      ? carousel.scrollLeft - scrollAmount
       : carousel.scrollLeft + scrollAmount;
-      
+
     carousel.scrollTo({
       left: scrollPosition,
       behavior: 'smooth'
@@ -98,35 +98,35 @@ const FeaturedFufu = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/80" />
       </div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mb-12">
-          <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-4 text-white">Fufu: The Soul of <span className="text-gold-400">Blackora</span></h2>
+          <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-4 text-white">Fufu: The Soul of <span className="text-gold-400">Authentic African Foods</span></h2>
           <p className="text-white/80 text-lg">
             Experience our signature dish that embodies the essence of West African cuisine, prepared with authenticity and served with tradition.
           </p>
         </div>
-        
+
         <div className="flex justify-end gap-2 mb-6">
-          <Button 
-            variant="outline" 
-            size="icon" 
+          <Button
+            variant="outline"
+            size="icon"
             className="rounded-full bg-black/30 backdrop-blur-sm border-gold-500/30 text-white hover:bg-gold-600/20"
             onClick={() => scroll('left')}
           >
             <ChevronLeft />
           </Button>
-          <Button 
-            variant="outline" 
-            size="icon" 
+          <Button
+            variant="outline"
+            size="icon"
             className="rounded-full bg-black/30 backdrop-blur-sm border-gold-500/30 text-white hover:bg-gold-600/20"
             onClick={() => scroll('right')}
           >
             <ChevronRight />
           </Button>
         </div>
-        
-        <div 
+
+        <div
           ref={carouselRef}
           className="flex overflow-x-auto gap-6 pb-8 scrollbar-hide scroll-smooth"
           style={{
@@ -137,7 +137,7 @@ const FeaturedFufu = () => {
           }}
         >
           {carouselItems.map((item) => (
-            <div 
+            <div
               key={item.id}
               className={cn(
                 "carousel-item flex-shrink-0 w-full max-w-md",
@@ -150,10 +150,10 @@ const FeaturedFufu = () => {
             </div>
           ))}
         </div>
-        
+
         <div className="mt-12 text-center">
           <Link to="/menu">
-            <Button 
+            <Button
               className="bg-gold-500 hover:bg-gold-600 text-white"
               size="lg"
             >

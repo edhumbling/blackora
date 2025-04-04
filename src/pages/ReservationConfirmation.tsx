@@ -10,7 +10,7 @@ const ReservationConfirmation = () => {
   return (
     <main className="min-h-screen">
       <Navbar />
-      
+
       <div className="pt-32 pb-20 px-4 md:px-6 lg:px-8">
         <div className="container mx-auto">
           <div className="max-w-lg mx-auto text-center">
@@ -20,18 +20,18 @@ const ReservationConfirmation = () => {
                   <CheckCircle className="h-12 w-12 text-green-600 dark:text-green-400" />
                 </div>
               </div>
-              
+
               <h1 className="text-2xl md:text-3xl font-serif font-bold mb-4">Reservation Confirmed!</h1>
-              
+
               <p className="text-muted-foreground mb-6">
-                Thank you for your reservation at Blackora. We've sent a confirmation email with all the details.
+                Thank you for your reservation at Authentic African Foods. We've sent a confirmation email with all the details.
               </p>
-              
+
               <div className="border-t border-b py-4 my-6">
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div className="text-left">
                     <p className="text-muted-foreground">Reservation #:</p>
-                    <p className="font-medium">BLK-{Math.floor(100000 + Math.random() * 900000)}</p>
+                    <p className="font-medium">AAF-{Math.floor(100000 + Math.random() * 900000)}</p>
                   </div>
                   <div className="text-left">
                     <p className="text-muted-foreground">Date:</p>
@@ -47,7 +47,7 @@ const ReservationConfirmation = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="flex flex-col gap-3">
                 <Link to="/menu">
                   <Button className="w-full">View Our Menu</Button>
@@ -60,7 +60,7 @@ const ReservationConfirmation = () => {
           </div>
         </div>
       </div>
-      
+
       <Footer />
       <Toaster position="top-right" />
     </main>

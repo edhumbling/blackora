@@ -41,14 +41,14 @@ const Navbar = () => {
         <div className="container flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <img 
-              src="https://ik.imagekit.io/humbling/SnapBG.ai_1741181355169.png?updatedAt=1741181376482" 
-              alt="Blackora" 
+            <img
+              src="https://ik.imagekit.io/humbling/SnapBG.ai_1741181355169.png?updatedAt=1741181376482"
+              alt="Authentic African Foods"
               className="h-12 w-auto"
             />
             <span className={`text-lg md:text-xl font-serif font-semibold ${
               isScrolled ? "text-gold-600" : "text-white"
-            }`}>Blackora</span>
+            }`}>AAF</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -64,7 +64,7 @@ const Navbar = () => {
                 }`}
               >
                 {item.name}
-                <span 
+                <span
                   className={`absolute bottom-1 left-3 right-3 h-px bg-gold-500 transform origin-left transition-transform duration-300 ${
                     location.pathname === item.path ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
                   }`}
@@ -75,19 +75,19 @@ const Navbar = () => {
 
           {/* Action Buttons */}
           <div className="flex items-center space-x-1">
-            <Button 
-              onClick={() => setIsAuthOpen(true)} 
-              variant="ghost" 
-              size="icon" 
+            <Button
+              onClick={() => setIsAuthOpen(true)}
+              variant="ghost"
+              size="icon"
               className={`${isScrolled ? "text-foreground/80 hover:text-gold-600" : "text-white hover:text-gold-400"}`}
             >
               <User className="h-5 w-5" />
             </Button>
-            
+
             <Link to="/cart">
-              <Button 
-                variant="ghost" 
-                size="icon" 
+              <Button
+                variant="ghost"
+                size="icon"
                 className={`${isScrolled ? "text-foreground/80 hover:text-gold-600" : "text-white hover:text-gold-400"} relative`}
               >
                 <ShoppingBag className="h-5 w-5" />
@@ -102,9 +102,9 @@ const Navbar = () => {
             {/* Mobile Menu */}
             <Sheet>
               <SheetTrigger asChild>
-                <Button 
-                  variant="ghost" 
-                  size="icon" 
+                <Button
+                  variant="ghost"
+                  size="icon"
                   className={`md:hidden ${isScrolled ? "text-foreground/80 hover:text-gold-600" : "text-white hover:text-gold-400"}`}
                 >
                   <Menu className="h-5 w-5" />
@@ -113,12 +113,12 @@ const Navbar = () => {
               <SheetContent className="flex flex-col">
                 <div className="flex items-center justify-between mb-8">
                   <Link to="/" className="flex items-center gap-2">
-                    <img 
-                      src="https://ik.imagekit.io/humbling/SnapBG.ai_1741181355169.png?updatedAt=1741181376482" 
-                      alt="Blackora" 
+                    <img
+                      src="https://ik.imagekit.io/humbling/SnapBG.ai_1741181355169.png?updatedAt=1741181376482"
+                      alt="Authentic African Foods"
                       className="h-8 w-auto"
                     />
-                    <span className="text-lg font-serif font-semibold">Blackora</span>
+                    <span className="text-lg font-serif font-semibold">AAF</span>
                   </Link>
                 </div>
                 <nav className="flex flex-col space-y-4">
@@ -137,17 +137,17 @@ const Navbar = () => {
                   ))}
                 </nav>
                 <div className="mt-auto pt-8 border-t">
-                  <Button 
-                    onClick={() => setIsAuthOpen(true)} 
-                    variant="outline" 
+                  <Button
+                    onClick={() => setIsAuthOpen(true)}
+                    variant="outline"
                     className="w-full mb-2 border-gold-500 text-gold-700 hover:bg-gold-50"
                   >
                     <User className="h-4 w-4 mr-2" />
                     Account
                   </Button>
                   <Link to="/cart" className="w-full">
-                    <Button 
-                      variant="default" 
+                    <Button
+                      variant="default"
                       className="w-full bg-gold-500 hover:bg-gold-600"
                     >
                       <ShoppingBag className="h-4 w-4 mr-2" />

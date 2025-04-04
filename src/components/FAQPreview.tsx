@@ -22,42 +22,42 @@ const FAQPreview = () => {
               Find answers to our most commonly asked questions
             </p>
           </div>
-          
+
           <Accordion type="single" collapsible className="space-y-4">
             <AccordionItem value="item-1" className="border rounded-lg p-1">
               <AccordionTrigger className="px-4 py-2 hover:no-underline font-medium">
-                What type of cuisine does Blackora serve?
+                What type of cuisine does Authentic African Foods serve?
               </AccordionTrigger>
               <AccordionContent className="px-4 py-2">
-                Blackora specializes in authentic African cuisine, with a focus on traditional dishes from 
-                various regions across the continent. Our menu features a blend of flavors, spices, and cooking 
+                Authentic African Foods specializes in authentic African cuisine, with a focus on traditional dishes from
+                various regions across the continent. Our menu features a blend of flavors, spices, and cooking
                 techniques that celebrate the rich culinary heritage of Africa.
               </AccordionContent>
             </AccordionItem>
-            
+
             <AccordionItem value="item-2" className="border rounded-lg p-1">
               <AccordionTrigger className="px-4 py-2 hover:no-underline font-medium">
                 Do you accommodate dietary restrictions?
               </AccordionTrigger>
               <AccordionContent className="px-4 py-2">
-                Yes, we offer a variety of options for guests with dietary restrictions. Our menu includes vegetarian, 
-                vegan, and gluten-free items. If you have specific allergies or dietary needs, please inform our staff 
+                Yes, we offer a variety of options for guests with dietary restrictions. Our menu includes vegetarian,
+                vegan, and gluten-free items. If you have specific allergies or dietary needs, please inform our staff
                 when placing your order, and we will do our best to accommodate you.
               </AccordionContent>
             </AccordionItem>
-            
+
             <AccordionItem value="item-3" className="border rounded-lg p-1">
               <AccordionTrigger className="px-4 py-2 hover:no-underline font-medium">
                 How can I make a reservation?
               </AccordionTrigger>
               <AccordionContent className="px-4 py-2">
-                Reservations can be made online through our website's reservation page, by calling us at (250) 123-4567, 
-                or by emailing reservations@blackora.com. We recommend making reservations at least 48 hours in advance, 
+                Reservations can be made online through our website's reservation page, by calling us at (250) 123-4567,
+                or by emailing reservations@authenticafricanfoods.com. We recommend making reservations at least 48 hours in advance,
                 especially for weekends and holidays.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-          
+
           <div className="text-center mt-8">
             <Link to="/faq">
               <Button variant="outline" className="border-gold-300 text-gold-700 hover:bg-gold-50">
