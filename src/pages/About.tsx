@@ -27,21 +27,29 @@ const AboutPage = () => {
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-serif font-semibold mb-6">Our Mission</h2>
-            <p className="text-muted-foreground mb-6">
-              At Authentic African Foods, our mission is to celebrate and share the diverse culinary traditions of Africa with our community.
-              We are committed to creating authentic, flavorful dishes that honor traditional recipes while incorporating local,
-              sustainable ingredients. Through our food, we aim to foster cultural understanding and provide a warm, welcoming
-              space where people can connect over exceptional meals.
-            </p>
-            <p className="text-muted-foreground mb-0">
-              We believe that food is a universal language that brings people together, and we're dedicated to creating memorable
-              dining experiences that transport our guests to the vibrant landscapes and rich cultures of Africa.
-            </p>
+            <div className="p-6 bg-card rounded-lg shadow-md border border-gold-200 dark:border-gold-800/30">
+              <p className="text-lg mb-0 leading-relaxed">
+                Authentic African Foods (AAF) strives to create an authentic African culinary experience that connects people through food, culture, and community.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       <div className="py-20 px-4 sm:px-6">
+        <div className="container mx-auto">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl font-serif font-semibold mb-6">Our Vision</h2>
+            <div className="p-6 bg-card rounded-lg shadow-md border border-gold-200 dark:border-gold-800/30">
+              <p className="text-lg mb-0 leading-relaxed">
+                To be the premier destination for authentic African cuisine in Northern BC not just as a thriving business that only offers delicious, traditional African dishes but also fosters cultural appreciation, community engagement, and economic empowerment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="py-20 px-4 sm:px-6 bg-secondary/30">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -79,42 +87,69 @@ const AboutPage = () => {
 
       <div className="py-20 px-4 sm:px-6 bg-secondary/30">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-serif font-semibold mb-10 text-center">Our Values</h2>
+          <h2 className="text-3xl font-serif font-semibold mb-10 text-center">Our Core Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-6 rounded-lg">
-              <h3 className="text-xl font-medium mb-4">Authenticity</h3>
-              <p className="text-muted-foreground">
+            <div className="p-6 rounded-lg bg-card shadow-sm border border-gold-200/50 dark:border-gold-800/20 hover:shadow-md transition-shadow">
+              <div className="flex items-center justify-center mb-4 h-12 w-12 rounded-full bg-gold-100 dark:bg-gold-900/30 text-gold-600 mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"/><path d="M3 11v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H7v-2a2 2 0 0 0-4 0Z"/><path d="M5 18v2"/><path d="M19 18v2"/></svg>
+              </div>
+              <h3 className="text-xl font-medium mb-4 text-center">Authenticity</h3>
+              <p className="text-muted-foreground text-center">
                 We honor traditional African recipes and cooking methods, ensuring each dish truly represents its cultural origins.
               </p>
             </div>
-            <div className="p-6 rounded-lg">
-              <h3 className="text-xl font-medium mb-4">Community</h3>
-              <p className="text-muted-foreground">
+            <div className="p-6 rounded-lg bg-card shadow-sm border border-gold-200/50 dark:border-gold-800/20 hover:shadow-md transition-shadow">
+              <div className="flex items-center justify-center mb-4 h-12 w-12 rounded-full bg-gold-100 dark:bg-gold-900/30 text-gold-600 mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              </div>
+              <h3 className="text-xl font-medium mb-4 text-center">Quality</h3>
+              <p className="text-muted-foreground text-center">
+                We are committed to using the finest ingredients and maintaining the highest standards in food preparation and service.
+              </p>
+            </div>
+            <div className="p-6 rounded-lg bg-card shadow-sm border border-gold-200/50 dark:border-gold-800/20 hover:shadow-md transition-shadow">
+              <div className="flex items-center justify-center mb-4 h-12 w-12 rounded-full bg-gold-100 dark:bg-gold-900/30 text-gold-600 mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h3 className="text-xl font-medium mb-4 text-center">Community</h3>
+              <p className="text-muted-foreground text-center">
                 We believe in creating a welcoming space where people can gather, connect, and share experiences over great food.
               </p>
             </div>
-            <div className="p-6 rounded-lg">
-              <h3 className="text-xl font-medium mb-4">Sustainability</h3>
-              <p className="text-muted-foreground">
+            <div className="p-6 rounded-lg bg-card shadow-sm border border-gold-200/50 dark:border-gold-800/20 hover:shadow-md transition-shadow">
+              <div className="flex items-center justify-center mb-4 h-12 w-12 rounded-full bg-gold-100 dark:bg-gold-900/30 text-gold-600 mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              </div>
+              <h3 className="text-xl font-medium mb-4 text-center">Customer-Centric</h3>
+              <p className="text-muted-foreground text-center">
+                We prioritize our customers' satisfaction and strive to exceed expectations in every interaction.
+              </p>
+            </div>
+            <div className="p-6 rounded-lg bg-card shadow-sm border border-gold-200/50 dark:border-gold-800/20 hover:shadow-md transition-shadow">
+              <div className="flex items-center justify-center mb-4 h-12 w-12 rounded-full bg-gold-100 dark:bg-gold-900/30 text-gold-600 mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <h3 className="text-xl font-medium mb-4 text-center">Cultural Representation</h3>
+              <p className="text-muted-foreground text-center">
+                We proudly showcase the diversity and richness of African cultures through our food, decor, and overall experience.
+              </p>
+            </div>
+            <div className="p-6 rounded-lg bg-card shadow-sm border border-gold-200/50 dark:border-gold-800/20 hover:shadow-md transition-shadow">
+              <div className="flex items-center justify-center mb-4 h-12 w-12 rounded-full bg-gold-100 dark:bg-gold-900/30 text-gold-600 mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 22a8 8 0 0 1 8-8h12a8 8 0 0 1-8 8Z"/><path d="M12 11V2a5 5 0 0 0-5 5"/><path d="M17 11V2a5 5 0 0 1 5 5"/></svg>
+              </div>
+              <h3 className="text-xl font-medium mb-4 text-center">Sustainability</h3>
+              <p className="text-muted-foreground text-center">
                 We're committed to responsible sourcing practices and minimizing our environmental footprint in all aspects of our operation.
               </p>
             </div>
-            <div className="p-6 rounded-lg">
-              <h3 className="text-xl font-medium mb-4">Innovation</h3>
-              <p className="text-muted-foreground">
-                While respecting tradition, we embrace creative approaches that enhance the dining experience.
-              </p>
-            </div>
-            <div className="p-6 rounded-lg">
-              <h3 className="text-xl font-medium mb-4">Excellence</h3>
-              <p className="text-muted-foreground">
-                We strive for excellence in every aspect of our service, from the quality of our food to the attentiveness of our staff.
-              </p>
-            </div>
-            <div className="p-6 rounded-lg">
-              <h3 className="text-xl font-medium mb-4">Inclusivity</h3>
-              <p className="text-muted-foreground">
-                We celebrate diversity and create a space where everyone feels welcome, respected, and valued.
+            <div className="p-6 rounded-lg bg-card shadow-sm border border-gold-200/50 dark:border-gold-800/20 hover:shadow-md transition-shadow">
+              <div className="flex items-center justify-center mb-4 h-12 w-12 rounded-full bg-gold-100 dark:bg-gold-900/30 text-gold-600 mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20"/><path d="m17 5-5-3-5 3"/><path d="m17 19-5 3-5-3"/><path d="M2 12h20"/><path d="m5 7-3 5 3 5"/><path d="m19 7 3 5-3 5"/></svg>
+              </div>
+              <h3 className="text-xl font-medium mb-4 text-center">Innovation & Growth</h3>
+              <p className="text-muted-foreground text-center">
+                While respecting tradition, we embrace creative approaches and continuous improvement to enhance the dining experience and grow our business.
               </p>
             </div>
           </div>
