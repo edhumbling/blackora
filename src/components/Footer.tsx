@@ -18,7 +18,7 @@ const Footer = () => {
       {/* Background image with overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://ik.imagekit.io/humbling/image%20(4).jpg?updatedAt=1741189571893"
+          src="https://ik.imagekit.io/edhumbling/image%20(1).jpg?updatedAt=1743790082800"
           alt="Footer background"
           className="w-full h-full object-cover"
         />
@@ -57,7 +57,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-6">
               <img
-                src="https://ik.imagekit.io/humbling/SnapBG.ai_1741181355169.png?updatedAt=1741181376482"
+                src="https://ik.imagekit.io/edhumbling/SnapBG.ai_1743785834763.png?updatedAt=1743790011258"
                 alt="Authentic African Foods"
                 className="h-10 w-auto"
               />

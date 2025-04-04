@@ -42,7 +42,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
             <img
-              src="https://ik.imagekit.io/humbling/SnapBG.ai_1741181355169.png?updatedAt=1741181376482"
+              src="https://ik.imagekit.io/edhumbling/SnapBG.ai_1743785834763.png?updatedAt=1743790011258"
               alt="Authentic African Foods"
               className="h-12 w-auto"
             />
@@ -114,7 +114,7 @@ const Navbar = () => {
                 <div className="flex items-center justify-between mb-8">
                   <Link to="/" className="flex items-center gap-2">
                     <img
-                      src="https://ik.imagekit.io/humbling/SnapBG.ai_1741181355169.png?updatedAt=1741181376482"
+                      src="https://ik.imagekit.io/edhumbling/SnapBG.ai_1743785834763.png?updatedAt=1743790011258"
                       alt="Authentic African Foods"
                       className="h-8 w-auto"
                     />
