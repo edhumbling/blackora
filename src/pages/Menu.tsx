@@ -20,7 +20,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Fufu & Egusi Soup",
         description: "Smooth, dough-like fufu served with rich and savory egusi soup made from ground melon seeds, leafy vegetables, and protein of choice.",
         price: 22.99,
-        image: "https://ik.imagekit.io/humbling/food/fufuasap_gh_1706595816_3291486728131350455_7928367704.jpg?updatedAt=1741186116468",
+        image: "https://ik.imagekit.io/edhumbling/download%20(2).jpeg",
         category: "main",
         popular: true
       },
@@ -39,7 +39,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Fufu with Light Soup",
         description: "Hand-pounded fufu served with light soup made with tomatoes, peppers, and your choice of fish, chicken, or beef.",
         price: 23.99,
-        image: "https://ik.imagekit.io/humbling/food/fufuasap_gh_1676193961_3036457483535128775_7928367704.jpg?updatedAt=1741186099569",
+        image: "https://ik.imagekit.io/edhumbling/bee_kitchen_1%20on%20Instagram_%20After%20detoxing%20we%20eat%20Fufu%20with%20Chicken%20Light%20Soup%20_%20I_m%20so%20annoyed%20I%20don_t%20have%20okro%20_%20What_s%20everyone%20having%20for%20lunch_%20Ps_%20Happy%20Eid_.jpeg",
         category: "main",
         spicy: true
       },
