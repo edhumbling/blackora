@@ -10,6 +10,7 @@ import FoodKnowledge from "@/components/FoodKnowledge";
 import FAQPreview from "@/components/FAQPreview";
 import Footer from "@/components/Footer";
 import WaakyeFeature from "@/components/WaakyeFeature";
+import SpecialOffers from "@/components/SpecialOffers";
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
       <CustomerDelight />
       <About />
       <FoodKnowledge />
+      <SpecialOffers />
       <FAQPreview />
       <Footer />
       <Toaster position="top-right" />

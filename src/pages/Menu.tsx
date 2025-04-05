@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import MenuList from "@/components/MenuList";
 import { MenuSection } from "@/types";
 import MenuFilter from "@/components/MenuFilter";
+import SpecialOffers from "@/components/SpecialOffers";
 
 const MENU_SECTIONS: MenuSection[] = [
   {
@@ -17,7 +18,7 @@ const MENU_SECTIONS: MenuSection[] = [
         id: "fufu-egusi",
         name: "Fufu & Egusi Soup",
         description: "Smooth, dough-like fufu served with rich and savory egusi soup made from ground melon seeds, leafy vegetables, and protein of choice.",
-        price: 21.99,
+        price: 22.99,
         image: "https://ik.imagekit.io/humbling/food/fufuasap_gh_1706595816_3291486728131350455_7928367704.jpg?updatedAt=1741186116468",
         category: "main",
         popular: true
@@ -26,7 +27,7 @@ const MENU_SECTIONS: MenuSection[] = [
         id: "jollof-rice",
         name: "Jollof Rice",
         description: "Traditional West African rice dish cooked in a rich, flavorful tomato and pepper sauce. Served with grilled chicken.",
-        price: 19.99,
+        price: 18.99,
         image: "https://ik.imagekit.io/humbling/food/chefabbys_1734083072_3522066547500215715_35533844416.jpg?updatedAt=1741191185444",
         category: "main",
         popular: true,
@@ -36,7 +37,7 @@ const MENU_SECTIONS: MenuSection[] = [
         id: "fufu-soup",
         name: "Fufu with Light Soup",
         description: "Hand-pounded fufu served with light soup made with tomatoes, peppers, and your choice of fish, chicken, or beef.",
-        price: 22.99,
+        price: 23.99,
         image: "https://ik.imagekit.io/humbling/food/fufuasap_gh_1676193961_3036457483535128775_7928367704.jpg?updatedAt=1741186099569",
         category: "main",
         spicy: true
@@ -45,7 +46,7 @@ const MENU_SECTIONS: MenuSection[] = [
         id: "waakye",
         name: "Waakye",
         description: "Ghanaian dish of rice and beans cooked with dried millet leaves, served with special waakye sauce, boiled eggs, fried plantains, and your choice of protein.",
-        price: 18.99,
+        price: 19.99,
         image: "https://ik.imagekit.io/edhumbling/Waakye/Waakye.jpeg",
         category: "main",
         popular: true
@@ -61,7 +62,7 @@ const MENU_SECTIONS: MenuSection[] = [
         id: "suya-skewers",
         name: "Suya Skewers",
         description: "Spicy grilled beef skewers marinated in a peanut-based spice blend. Served with fresh onions and tomatoes.",
-        price: 17.99,
+        price: 16.99,
         image: "https://ik.imagekit.io/humbling/food/chef_zouheir_1732450422_3508370885868664699_4927714148.webp?updatedAt=1741192053938",
         category: "appetizer",
         popular: true,
@@ -71,7 +72,7 @@ const MENU_SECTIONS: MenuSection[] = [
         id: "kelewele",
         name: "Kelewele",
         description: "Spicy fried plantains seasoned with ginger, cayenne pepper, and other spices. A popular Ghanaian street food.",
-        price: 12.99,
+        price: 7.99,
         image: "https://ik.imagekit.io/humbling/food/eatwithafia_1614699778_2520606889971483910_2014293526.jpg?updatedAt=1741190695139",
         category: "appetizer",
         vegetarian: true,
@@ -81,7 +82,7 @@ const MENU_SECTIONS: MenuSection[] = [
         id: "moin-moin",
         name: "Moin Moin",
         description: "Steamed bean pudding made from blended black-eyed peas, peppers, and spices. Soft and savory.",
-        price: 13.99,
+        price: 8.99,
         image: "https://ik.imagekit.io/humbling/food/msjemima_ng_1741317693_3624387598661773644_1423578390.jpg?updatedAt=1741332619169",
         category: "appetizer",
         vegetarian: true
@@ -97,7 +98,7 @@ const MENU_SECTIONS: MenuSection[] = [
         id: "fried-plantains",
         name: "Fried Plantains",
         description: "Sweet, ripe plantains, fried until golden brown. A perfect sweet contrast to savory dishes.",
-        price: 8.99,
+        price: 6.99,
         image: "https://ik.imagekit.io/humbling/food/eatwithafia_1614699778_2520606889971483910_2014293526.jpg?updatedAt=1741190695139",
         category: "side",
         vegetarian: true,
@@ -108,7 +109,7 @@ const MENU_SECTIONS: MenuSection[] = [
         id: "jollof-rice-side",
         name: "Jollof Rice (Side)",
         description: "A smaller portion of our signature jollof rice.",
-        price: 9.99,
+        price: 7.99,
         image: "https://ik.imagekit.io/humbling/food/chefabbys_1734083072_3522066547500215715_35533844416.jpg?updatedAt=1741191185444",
         category: "side",
         spicy: true
@@ -117,7 +118,7 @@ const MENU_SECTIONS: MenuSection[] = [
         id: "garri",
         name: "Garri",
         description: "Fermented cassava flour, ready to be mixed with water to create a smooth, dough-like consistency.",
-        price: 6.99,
+        price: 5.99,
         image: "https://ik.imagekit.io/humbling/food/msjemima_ng_1734243994_3522969963963266594_1423578390.jpg?updatedAt=1741332618517",
         category: "side",
         vegetarian: true,
@@ -282,6 +283,8 @@ const Menu = () => {
           )}
         </div>
       </section>
+
+      <SpecialOffers />
 
       <Footer />
       <Toaster position="top-right" />
