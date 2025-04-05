@@ -209,7 +209,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center gap-1 text-sm font-medium text-white animate-pulse hover:animate-none transition-all duration-300 px-4 py-1 rounded-full bg-gradient-to-r from-gold-600/20 to-gold-400/20 backdrop-blur-sm border border-gold-500/30 shadow-[0_0_15px_rgba(215,181,80,0.5)] hover:shadow-[0_0_25px_rgba(215,181,80,0.8)]"
         >
-          Made with <span className="text-red-500 text-lg animate-pulse">❤</span> by Emma
+          Made with <span className="text-red-500 text-lg animate-pulse">❤</span> by <span className="underline decoration-gold-500 decoration-2 underline-offset-2 font-semibold hover:text-gold-400">Emma</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
         </a>
       </div>
     </footer>
