@@ -11,6 +11,7 @@ import FAQPreview from "@/components/FAQPreview";
 import Footer from "@/components/Footer";
 import WaakyeFeature from "@/components/WaakyeFeature";
 import SpecialOffers from "@/components/SpecialOffers";
+import MenuDescription from "@/components/MenuDescription";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <FeaturedFufu />
       <WaakyeFeature />
       <FeaturedMenu />
+      <MenuDescription />
       <CustomerDelight />
       <About />
       <FoodKnowledge />

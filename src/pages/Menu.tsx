@@ -7,6 +7,7 @@ import MenuList from "@/components/MenuList";
 import { MenuSection } from "@/types";
 import MenuFilter from "@/components/MenuFilter";
 import SpecialOffers from "@/components/SpecialOffers";
+import MenuDescription from "@/components/MenuDescription";
 
 const MENU_SECTIONS: MenuSection[] = [
   {
@@ -283,6 +284,8 @@ const Menu = () => {
           )}
         </div>
       </section>
+
+      <MenuDescription />
 
       <SpecialOffers />
 
