@@ -1,10 +1,12 @@
 
 import { useState, useRef, useEffect } from "react";
 import { Star, ThumbsUp, Heart } from "lucide-react";
+import { ensureVideoPlayback } from "@/utils/videoUtils";
 
 const CustomerDelight = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -25,6 +27,12 @@ const CustomerDelight = () => {
         observer.unobserve(sectionRef.current);
       }
     };
+  }, []);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      ensureVideoPlayback(videoRef);
+    }
   }, []);
 
   return (
@@ -82,11 +90,15 @@ const CustomerDelight = () => {
             <div className={`w-full lg:w-1/2 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100' : 'opacity-0 translate-x-8'}`}>
               <div className="rounded-xl overflow-hidden border-2 border-gold-500/30 shadow-[0_0_25px_rgba(215,181,80,0.15)]">
                 <video
+                  ref={videoRef}
                   src="https://ik.imagekit.io/humbling/food/fufuasap_gh_1690455528_3156089622379166010_7928367704.mp4?updatedAt=1741186236034"
                   autoPlay
                   muted
                   loop
                   playsInline
+                  preload="auto"
+                  controls={false}
+                  webkit-playsinline="true"
                   className="w-full h-full object-cover"
                 />
               </div>

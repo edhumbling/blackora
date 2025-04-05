@@ -2,18 +2,31 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import { useRef, useEffect } from "react";
+import { ensureVideoPlayback } from "@/utils/videoUtils";
 
 const Hero = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      ensureVideoPlayback(videoRef);
+    }
+  }, []);
   return (
     <section className="relative min-h-screen flex items-center pt-20">
       {/* Video background with overlay */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <video
+          ref={videoRef}
           src="https://ik.imagekit.io/humbling/food/fufuasap_gh_1690205376_3153992921375879618_7928367704.mp4?updatedAt=1741186322871"
           autoPlay
           muted
           loop
           playsInline
+          preload="auto"
+          controls={false}
+          webkit-playsinline="true"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40" />

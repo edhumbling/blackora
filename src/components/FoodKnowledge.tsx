@@ -1,7 +1,20 @@
 
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { useRef, useEffect } from "react";
+import { ensureVideoPlayback } from "@/utils/videoUtils";
 
 const FoodKnowledge = () => {
+  const videoRef1 = useRef<HTMLVideoElement>(null);
+  const videoRef2 = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoRef1.current) {
+      ensureVideoPlayback(videoRef1);
+    }
+    if (videoRef2.current) {
+      ensureVideoPlayback(videoRef2);
+    }
+  }, []);
   return (
     <section className="py-20 px-4 sm:px-6">
       <div className="container mx-auto">
@@ -13,16 +26,20 @@ const FoodKnowledge = () => {
             Learn about African cuisine traditions and cooking techniques from our culinary expert Afia
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="rounded-lg overflow-hidden shadow-lg">
             <AspectRatio ratio={16/9}>
-              <video 
-                className="w-full h-full object-cover" 
-                autoPlay 
-                muted 
-                loop 
+              <video
+                ref={videoRef1}
+                className="w-full h-full object-cover"
+                autoPlay
+                muted
+                loop
                 playsInline
+                preload="auto"
+                controls={false}
+                webkit-playsinline="true"
               >
                 <source src="https://ik.imagekit.io/humbling/food/eatwithafia_1727627527_3467912920160386684_2014293526.mp4?updatedAt=1741190708049" type="video/mp4" />
                 Your browser does not support the video tag.
@@ -35,15 +52,19 @@ const FoodKnowledge = () => {
               </p>
             </div>
           </div>
-          
+
           <div className="rounded-lg overflow-hidden shadow-lg">
             <AspectRatio ratio={16/9}>
-              <video 
-                className="w-full h-full object-cover" 
-                autoPlay 
-                muted 
-                loop 
+              <video
+                ref={videoRef2}
+                className="w-full h-full object-cover"
+                autoPlay
+                muted
+                loop
                 playsInline
+                preload="auto"
+                controls={false}
+                webkit-playsinline="true"
               >
                 <source src="https://ik.imagekit.io/humbling/food/eatwithafia_1727378122_3465819370734384378_2014293526.mp4?updatedAt=1741190703379" type="video/mp4" />
                 Your browser does not support the video tag.
