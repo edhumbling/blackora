@@ -200,6 +200,18 @@ const Footer = () => {
 
       {/* Scrolling Text */}
       <ScrollingText text="Authentic African Foods" speed={20} />
+
+      {/* Made with love footer */}
+      <div className="w-full bg-black py-2 text-center text-xs text-white/60">
+        <a
+          href="https://linkedin.com/in/edhumbling"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-gold-300 transition-colors inline-flex items-center gap-1"
+        >
+          Made with <span className="text-red-500">❤</span> by Emma
+        </a>
+      </div>
     </footer>
   );
 };

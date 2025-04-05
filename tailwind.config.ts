@@ -22,6 +22,7 @@ export default {
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
 				serif: ['Playfair Display', 'serif'],
+				display: ['Anton', 'Impact', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
