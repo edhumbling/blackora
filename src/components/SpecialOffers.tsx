@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Tag, Truck, Users, Gift } from "lucide-react";
+import { useState } from "react";
+import AuthModal from "./AuthModal";
 
 const SpecialOffers = () => {
+  const [isAuthOpen, setIsAuthOpen] = useState(false);
   return (
     <section className="py-20 px-4 sm:px-6 bg-secondary/30">
       <div className="container mx-auto">
@@ -101,17 +104,21 @@ const SpecialOffers = () => {
               </li>
             </ul>
             <div className="text-center">
-              <Link to="/signup">
-                <Button className="bg-gold-500 hover:bg-gold-600 text-white">
-                  Sign Up Now
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
+              <Button
+                className="bg-gold-500 hover:bg-gold-600 text-white"
+                onClick={() => setIsAuthOpen(true)}
+              >
+                Sign Up Now
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    {/* Auth Modal */}
+    <AuthModal isOpen={isAuthOpen} onClose={() => setIsAuthOpen(false)} initialTab="signup" />
   );
 };
 

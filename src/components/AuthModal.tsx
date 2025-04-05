@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
@@ -10,11 +10,19 @@ import { toast } from "sonner";
 interface AuthModalProps {
   isOpen: boolean;
   onClose: () => void;
+  initialTab?: "login" | "signup";
 }
 
-const AuthModal = ({ isOpen, onClose }: AuthModalProps) => {
-  const [activeTab, setActiveTab] = useState("login");
+const AuthModal = ({ isOpen, onClose, initialTab = "login" }: AuthModalProps) => {
+  const [activeTab, setActiveTab] = useState(initialTab);
   const [isLoading, setIsLoading] = useState(false);
+
+  // Reset active tab when initialTab changes or modal opens
+  useEffect(() => {
+    if (isOpen) {
+      setActiveTab(initialTab);
+    }
+  }, [isOpen, initialTab]);
 
   // Mock auth functions
   const handleLogin = (e: React.FormEvent) => {
