@@ -100,7 +100,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Fried Plantains",
         description: "Sweet, ripe plantains, fried until golden brown. A perfect sweet contrast to savory dishes.",
         price: 6.99,
-        image: "https://ik.imagekit.io/humbling/food/eatwithafia_1614699778_2520606889971483910_2014293526.jpg?updatedAt=1741190695139",
+        image: "https://ik.imagekit.io/edhumbling/Fried%20Sweet%20Plantains.jpeg",
         category: "side",
         vegetarian: true,
         vegan: true,
