@@ -48,16 +48,16 @@ const featuredItems = [
 
 const FeaturedMenu = () => {
   return (
-    <section className="py-20 px-4 sm:px-6">
+    <section className="py-12 sm:py-16 md:py-20">
       <div className="container mx-auto">
-        <div className="text-center mb-10 max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-4">Our Signature Dishes</h2>
+        <div className="text-center mb-6 sm:mb-8 md:mb-10 max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-semibold mb-3 sm:mb-4">Our Signature Dishes</h2>
           <p className="text-muted-foreground">
             Experience the rich, bold flavors of authentic African cuisine, crafted with passion and tradition.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           {featuredItems.map((item) => (
             <div key={item.id} className="animate-fade-in">
               <MenuItem item={item} featured={true} />

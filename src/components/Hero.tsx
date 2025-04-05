@@ -26,23 +26,23 @@ const Hero = () => {
         <div className="absolute bottom-0 left-0 w-full h-16 bg-[url('https://ik.imagekit.io/humbling/kente-pattern-horizontal.png')] opacity-15"></div>
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+      <div className="container mx-auto relative z-10">
         <div className="max-w-3xl">
           <span className="inline-block px-3 py-1 bg-gold-500/20 backdrop-blur-sm border border-gold-500/30 rounded-full text-sm font-medium text-white mb-6 animate-fade-in">
             Prince George, Canada
           </span>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 leading-tight animate-fade-in">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-4 sm:mb-6 leading-tight animate-fade-in">
             Experience <span className="text-gold-400">Authentic African</span> Cuisine
           </h1>
 
-          <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl animate-fade-in">
+          <p className="text-base sm:text-lg md:text-xl text-white/80 mb-6 sm:mb-8 max-w-2xl animate-fade-in">
             Indulge in the rich flavors and cultural heritage of African cuisine, crafted with passion and tradition at Authentic African Foods.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in">
             <Link to="/menu">
-              <Button size="lg" className="bg-gold-500 hover:bg-gold-600 text-white">
+              <Button size="lg" className="bg-gold-500 hover:bg-gold-600 text-white w-full sm:w-auto">
                 Explore Menu
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
@@ -50,7 +50,7 @@ const Hero = () => {
             <Link to="/reservations">
               <Button
                 size="lg"
-                className="bg-white text-gold-600 hover:bg-white/90 border-2 border-gold-500 shadow-lg backdrop-blur-sm animate-pulse"
+                className="bg-white text-gold-600 hover:bg-white/90 border-2 border-gold-500 shadow-lg backdrop-blur-sm animate-pulse w-full sm:w-auto"
               >
                 Make Reservation
               </Button>

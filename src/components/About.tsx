@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <section className="py-20 px-4 sm:px-6 bg-secondary/50">
+    <section className="py-12 sm:py-16 md:py-20 bg-secondary/50">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="order-2 lg:order-1 animate-fade-in-left">
-            <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-semibold mb-4 sm:mb-6">
               Our Story
             </h2>
 
@@ -35,7 +35,7 @@ const About = () => {
             <Link to="/about">
               <Button
                 variant="outline"
-                className="border-gold-300 text-gold-700 hover:bg-gold-50"
+                className="border-gold-300 text-gold-700 hover:bg-gold-50 w-full sm:w-auto"
               >
                 Learn More About Us
               </Button>

@@ -4,7 +4,7 @@ import { ArrowRight, Utensils } from "lucide-react";
 
 const MenuDescription = () => {
   return (
-    <section className="py-20 px-4 sm:px-6 bg-secondary/30">
+    <section className="py-12 sm:py-16 md:py-20 bg-secondary/30">
       <div className="container mx-auto">
         <div className="text-center mb-12 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-4">Our Culinary Offerings</h2>
@@ -14,9 +14,9 @@ const MenuDescription = () => {
         </div>
 
         {/* Fufu Section */}
-        <div className="bg-card rounded-xl shadow-lg overflow-hidden mb-16">
+        <div className="bg-card rounded-xl shadow-lg overflow-hidden mb-8 sm:mb-12 md:mb-16">
           <div className="grid grid-cols-1 lg:grid-cols-2">
-            <div className="p-8 lg:p-10 flex flex-col justify-center">
+            <div className="p-5 sm:p-6 md:p-8 lg:p-10 flex flex-col justify-center">
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-gold-100 text-gold-700 rounded-full text-sm font-medium mb-6">
                 <Utensils className="h-4 w-4" />
                 <span>Signature Dish</span>
@@ -24,12 +24,12 @@ const MenuDescription = () => {
 
               <h3 className="text-2xl md:text-3xl font-serif font-semibold mb-6">Fufu: The Heartbeat of Our Menu</h3>
 
-              <div className="space-y-4 text-muted-foreground">
+              <div className="space-y-3 sm:space-y-4 text-muted-foreground">
                 <p>
                   Fufu is the cornerstone of our culinary offerings, representing the authentic taste and tradition of West African cuisine. This beloved staple is available in multiple variations to suit your preference:
                 </p>
 
-                <ul className="list-disc pl-5 space-y-2">
+                <ul className="list-disc pl-4 sm:pl-5 space-y-1 sm:space-y-2">
                   <li><span className="font-medium text-foreground">Cassava Fufu</span> - Made from fermented cassava, offering a smooth, slightly tangy flavor</li>
                   <li><span className="font-medium text-foreground">Plantain Fufu</span> - A sweeter variation made from green plantains</li>
                   <li><span className="font-medium text-foreground">Yam Fufu</span> - Created from pounded yam for a lighter texture</li>
@@ -40,7 +40,7 @@ const MenuDescription = () => {
                   Each Fufu variant is served with your choice of our signature soups:
                 </p>
 
-                <ul className="list-disc pl-5 space-y-2">
+                <ul className="list-disc pl-4 sm:pl-5 space-y-1 sm:space-y-2">
                   <li><span className="font-medium text-foreground">Peanut Butter Soup</span> - Rich and creamy soup with a nutty flavor</li>
                   <li><span className="font-medium text-foreground">Light Soup</span> - A clear, flavorful broth with vegetables and your choice of protein</li>
                   <li><span className="font-medium text-foreground">Palm Nut Soup</span> - Made from the pulp of palm nuts, offering a rich, savory taste</li>
@@ -59,7 +59,7 @@ const MenuDescription = () => {
               </div>
             </div>
 
-            <div className="relative h-80 lg:h-auto">
+            <div className="relative h-64 sm:h-72 md:h-80 lg:h-auto">
               <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 gap-2 p-2 lg:p-4">
                 <div className="rounded-lg overflow-hidden">
                   <img
@@ -130,7 +130,7 @@ const MenuDescription = () => {
               </div>
             </div>
 
-            <div className="p-8 lg:p-10 flex flex-col justify-center order-1 lg:order-2">
+            <div className="p-5 sm:p-6 md:p-8 lg:p-10 flex flex-col justify-center order-1 lg:order-2">
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-gold-100 text-gold-700 rounded-full text-sm font-medium mb-6">
                 <Utensils className="h-4 w-4" />
                 <span>Expanded Menu</span>
@@ -138,12 +138,12 @@ const MenuDescription = () => {
 
               <h3 className="text-2xl md:text-3xl font-serif font-semibold mb-6">Beyond Fufu: Our Diverse Offerings</h3>
 
-              <div className="space-y-4 text-muted-foreground">
+              <div className="space-y-3 sm:space-y-4 text-muted-foreground">
                 <p>
                   To broaden our appeal and showcase the rich diversity of African cuisine, we offer a variety of other beloved dishes:
                 </p>
 
-                <ul className="list-disc pl-5 space-y-2">
+                <ul className="list-disc pl-4 sm:pl-5 space-y-1 sm:space-y-2">
                   <li>
                     <span className="font-medium text-foreground">Jollof Rice</span> - A flavorful one-pot rice dish cooked in a rich tomato and pepper sauce, served with your choice of protein
                   </li>
@@ -156,7 +156,7 @@ const MenuDescription = () => {
                 </ul>
 
                 <p className="font-medium text-foreground">Sides and Extras:</p>
-                <ul className="list-disc pl-5 space-y-2">
+                <ul className="list-disc pl-4 sm:pl-5 space-y-1 sm:space-y-2">
                   <li>Fried Plantains - Sweet, ripe plantains fried until golden brown</li>
                   <li>Ghanaian Salad - Fresh vegetables with a unique Ghanaian dressing</li>
                   <li>Shito (Pepper Sauce) - A spicy, flavorful condiment that adds heat to any dish</li>

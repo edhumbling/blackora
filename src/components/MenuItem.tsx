@@ -22,10 +22,10 @@ const MenuItem = ({ item, featured = false }: MenuItemProps) => {
   }).format(price);
 
   return (
-    <div 
+    <div
       className={`group relative overflow-hidden rounded-lg transition-all duration-300 ${
-        featured 
-          ? "bg-white shadow-lg hover:shadow-xl" 
+        featured
+          ? "bg-white shadow-lg hover:shadow-xl"
           : "border border-border hover:border-gold-200 bg-white/50 hover:bg-white"
       }`}
       onMouseEnter={() => setIsHovered(true)}
@@ -39,18 +39,18 @@ const MenuItem = ({ item, featured = false }: MenuItemProps) => {
           loading="lazy"
         />
       </div>
-      
-      <div className="p-4">
+
+      <div className="p-3 sm:p-4">
         <div className="flex justify-between items-start mb-2">
-          <h3 className="font-serif font-medium text-lg">{name}</h3>
+          <h3 className="font-serif font-medium text-base sm:text-lg">{name}</h3>
           <span className="font-medium text-gold-700">{formattedPrice}</span>
         </div>
-        
-        <p className="text-muted-foreground text-sm mb-3 line-clamp-2">{description}</p>
-        
+
+        <p className="text-muted-foreground text-xs sm:text-sm mb-2 sm:mb-3 line-clamp-2">{description}</p>
+
         {/* Diet badges */}
         {(vegetarian || vegan || spicy || glutenFree) && (
-          <div className="flex flex-wrap gap-1 mb-3">
+          <div className="flex flex-wrap gap-1 mb-2 sm:mb-3">
             {vegetarian && (
               <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">
                 Vegetarian
@@ -73,9 +73,9 @@ const MenuItem = ({ item, featured = false }: MenuItemProps) => {
             )}
           </div>
         )}
-        
-        <Button 
-          onClick={() => addItem(item)} 
+
+        <Button
+          onClick={() => addItem(item)}
           className={`w-full bg-gold-500 hover:bg-gold-600 mt-2 transition-all duration-300`}
         >
           <Plus className="mr-2 h-4 w-4" />

@@ -27,12 +27,12 @@ const Footer = () => {
       </div>
 
       {/* Newsletter Section */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-16">
-        <div className="max-w-xl mx-auto text-center mb-10">
-          <h3 className="text-2xl md:text-3xl font-serif font-semibold mb-4">
+      <div className="relative z-10 container mx-auto py-10 sm:py-12 md:py-16">
+        <div className="max-w-xl mx-auto text-center mb-6 sm:mb-8 md:mb-10">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-serif font-semibold mb-3 sm:mb-4">
             Join Our Culinary Journey
           </h3>
-          <p className="text-white/70 mb-6">
+          <p className="text-white/70 mb-4 sm:mb-6 text-sm sm:text-base">
             Subscribe to our newsletter for exclusive offers, recipes, and updates.
           </p>
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
@@ -44,7 +44,7 @@ const Footer = () => {
             />
             <Button
               type="submit"
-              className="bg-gold-500 hover:bg-gold-600 text-white shrink-0"
+              className="bg-gold-500 hover:bg-gold-600 text-white shrink-0 w-full sm:w-auto"
             >
               Subscribe
             </Button>
@@ -53,7 +53,7 @@ const Footer = () => {
 
         <hr className="border-white/10 my-10" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
           {/* About */}
           <div>
             <div className="flex items-center gap-2 mb-6">

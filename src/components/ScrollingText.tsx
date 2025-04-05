@@ -12,7 +12,7 @@ const ScrollingText: React.FC<ScrollingTextProps> = ({ text, speed = 20 }) => {
   return (
     <div className="w-full overflow-hidden bg-black py-6">
       <div
-        className="whitespace-nowrap animate-scroll-x inline-block text-gold-100 font-black text-6xl md:text-7xl lg:text-8xl tracking-wider font-display"
+        className="whitespace-nowrap animate-scroll-x inline-block text-gold-100 font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-wider font-display"
         style={{
           animationDuration: `${speed}s`,
           animationTimingFunction: 'linear',
