@@ -14,7 +14,18 @@ const Hero = () => {
     }
   }, []);
   return (
-    <section className="relative min-h-screen flex items-center pt-20">
+    <section className="relative min-h-screen flex flex-col pt-20">
+      {/* Announcement Banner */}
+      <div className="w-full bg-gradient-to-r from-gold-600 to-gold-400 text-center py-3 px-4 z-20 relative shadow-md">
+        <div className="flex items-center justify-center">
+          <div className="w-2 h-2 rounded-full bg-white mr-2 animate-ping"></div>
+          <p className="font-medium text-black text-sm sm:text-base">
+            We just launched! Excited to Welcome you!
+          </p>
+        </div>
+      </div>
+
+      <div className="flex-1 flex items-center relative">
       {/* Video background with overlay */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <video
@@ -82,6 +93,7 @@ const Hero = () => {
             <span className="text-gold-400 text-xs font-medium">— Food & Wine Magazine</span>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );
