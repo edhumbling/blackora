@@ -7,6 +7,7 @@ import { CartProvider } from "@/hooks/useCart";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import ThemeToggle from "@/components/ThemeToggle";
 import ScrollToTop from "@/components/ScrollToTop";
+import { SplashCursor } from "@/components/ui/splash-cursor";
 
 // Pages
 import Index from "./pages/Index";
@@ -37,6 +38,7 @@ const App = () => (
           <Toaster />
           <Sonner />
           <BrowserRouter>
+            <SplashCursor color="rgba(215, 181, 80, 0.5)" size={100} duration={1000} />
             <ScrollToTop />
             <Routes>
               <Route path="/" element={<Index />} />
