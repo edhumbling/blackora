@@ -74,7 +74,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Kelewele",
         description: "Spicy fried plantains seasoned with ginger, cayenne pepper, and other spices. A popular Ghanaian street food.",
         price: 7.99,
-        image: "https://ik.imagekit.io/humbling/food/eatwithafia_1614699778_2520606889971483910_2014293526.jpg?updatedAt=1741190695139",
+        image: "https://ik.imagekit.io/edhumbling/IMG_4440-1.jpg?updatedAt=1743855331322",
         category: "appetizer",
         vegetarian: true,
         spicy: true
@@ -84,7 +84,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Moin Moin",
         description: "Steamed bean pudding made from blended black-eyed peas, peppers, and spices. Soft and savory.",
         price: 8.99,
-        image: "https://ik.imagekit.io/humbling/food/msjemima_ng_1741317693_3624387598661773644_1423578390.jpg?updatedAt=1741332619169",
+        image: "https://ik.imagekit.io/edhumbling/20230111-Moin-Moin-Maureen-Celestine-hero-5c656cbc3b684be1b1f29414f2bdc29c.webp?updatedAt=1743855410673",
         category: "appetizer",
         vegetarian: true
       }
@@ -120,7 +120,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Garri",
         description: "Fermented cassava flour, ready to be mixed with water to create a smooth, dough-like consistency.",
         price: 5.99,
-        image: "https://ik.imagekit.io/humbling/food/msjemima_ng_1734243994_3522969963963266594_1423578390.jpg?updatedAt=1741332618517",
+        image: "https://ik.imagekit.io/edhumbling/Garri.webp",
         category: "side",
         vegetarian: true,
         vegan: true,
@@ -138,7 +138,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Zobo (Hibiscus Drink)",
         description: "Refreshing Nigerian drink made from dried hibiscus flowers, flavored with pineapple and ginger.",
         price: 5.99,
-        image: "https://ik.imagekit.io/humbling/food/sugarcane_juicer_1651863876_2819702889559809063_3598918405.jpg?updatedAt=1741332618646",
+        image: "https://ik.imagekit.io/edhumbling/How%20To%20Make%20Zobo%20Drink%20(Sobolo%20Drink%20Recipe).jpeg",
         category: "beverage",
         vegetarian: true,
         vegan: true,
@@ -149,7 +149,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Palm Wine",
         description: "Traditional African alcoholic beverage made from the sap of palm trees. Sweet and mildly alcoholic.",
         price: 9.99,
-        image: "https://ik.imagekit.io/humbling/food/msjemima_ng_1734602580_3525850968261972217_1423578390.jpg?updatedAt=1741332618387",
+        image: "https://ik.imagekit.io/edhumbling/Pulque.jpeg",
         category: "beverage",
         vegetarian: true,
         vegan: true,
@@ -160,7 +160,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Chapman",
         description: "Nigerian cocktail made with a blend of Fanta, Sprite, Angostura bitters, and blackcurrant.",
         price: 7.99,
-        image: "https://ik.imagekit.io/humbling/food/naijafoodies_1681941183_3071744433142772050_1290173.jpg?updatedAt=1741332618297",
+        image: "https://ik.imagekit.io/edhumbling/download%20(1).jpeg",
         category: "beverage",
         vegetarian: true
       }
@@ -176,7 +176,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Puff Puff",
         description: "Deep-fried dough balls, lightly sweetened and served warm. Similar to beignets or doughnuts.",
         price: 8.99,
-        image: "https://ik.imagekit.io/humbling/food/msjemima_ng_1709911329_3318775064962733644_1423578390.jpg?updatedAt=1741332618867",
+        image: "https://ik.imagekit.io/edhumbling/Sweet%20Doughnut%20Balls.jpeg",
         category: "dessert",
         vegetarian: true
       },
@@ -185,7 +185,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Coconut Cake",
         description: "Moist cake made with fresh coconut and topped with coconut flakes.",
         price: 10.99,
-        image: "https://ik.imagekit.io/humbling/food/msjemima_ng_1694801044_3192835559608631320_1423578390.jpg?updatedAt=1741332619055",
+        image: "https://ik.imagekit.io/edhumbling/Classic%20Old%20Fashioned%20Coconut%20Cake%20Recipe%20_%20Moist%20&%20Delicious.jpeg",
         category: "dessert",
         vegetarian: true
       },
@@ -194,7 +194,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Chin Chin",
         description: "Crunchy, sweet fried pastry popular in West Africa. Flavored with nutmeg and cinnamon.",
         price: 7.99,
-        image: "https://ik.imagekit.io/humbling/food/msjemima_ng_1730192429_3489647559010823979_1423578390.jpg?updatedAt=1741332618981",
+        image: "https://ik.imagekit.io/edhumbling/Crunchy%20Coconut%20Chin%20Chin.jpeg",
         category: "dessert",
         vegetarian: true
       }
