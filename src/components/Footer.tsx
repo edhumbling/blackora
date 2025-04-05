@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Facebook, Instagram, Twitter, Mail, MapPin, Phone, Clock } from "lucide-react";
 import { toast } from "sonner";
+import ScrollingText from "./ScrollingText";
 
 const Footer = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -196,6 +197,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
+      {/* Scrolling Text */}
+      <ScrollingText text="Authentic African Foods" speed={20} />
     </footer>
   );
 };

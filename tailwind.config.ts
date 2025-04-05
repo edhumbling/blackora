@@ -106,6 +106,10 @@ export default {
 				},
 				shimmer: {
 					'100%': { transform: 'translateX(100%)' }
+				},
+				scrollX: {
+					'0%': { transform: 'translateX(0)' },
+					'100%': { transform: 'translateX(-50%)' }
 				}
 			},
 			animation: {
@@ -116,7 +120,8 @@ export default {
 				'fade-in-right': 'fadeInRight 0.6s ease-out forwards',
 				'scale-in': 'scaleIn 0.6s ease-out forwards',
 				'float': 'float 3s ease-in-out infinite',
-				'shimmer': 'shimmer 2s infinite'
+				'shimmer': 'shimmer 2s infinite',
+				'scroll-x': 'scrollX 20s linear infinite'
 			},
 			backgroundImage: {
 				'gold-gradient': 'linear-gradient(to right, #D7B550, #FBF8F0, #D7B550)',
