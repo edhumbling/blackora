@@ -202,14 +202,14 @@ const Footer = () => {
       <ScrollingText text="Authentic African Foods" speed={20} />
 
       {/* Made with love footer */}
-      <div className="w-full bg-black py-2 text-center text-xs text-white/60">
+      <div className="w-full bg-black py-3 text-center">
         <a
           href="https://linkedin.com/in/edhumbling"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-gold-300 transition-colors inline-flex items-center gap-1"
+          className="inline-flex items-center justify-center gap-1 text-sm font-medium text-white animate-pulse hover:animate-none transition-all duration-300 px-4 py-1 rounded-full bg-gradient-to-r from-gold-600/20 to-gold-400/20 backdrop-blur-sm border border-gold-500/30 shadow-[0_0_15px_rgba(215,181,80,0.5)] hover:shadow-[0_0_25px_rgba(215,181,80,0.8)]"
         >
-          Made with <span className="text-red-500">❤</span> by Emma
+          Made with <span className="text-red-500 text-lg animate-pulse">❤</span> by Emma
         </a>
       </div>
     </footer>

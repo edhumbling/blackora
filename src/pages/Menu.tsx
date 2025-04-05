@@ -64,7 +64,7 @@ const MENU_SECTIONS: MenuSection[] = [
         name: "Suya Skewers",
         description: "Spicy grilled beef skewers marinated in a peanut-based spice blend. Served with fresh onions and tomatoes.",
         price: 16.99,
-        image: "https://ik.imagekit.io/humbling/food/chef_zouheir_1732450422_3508370885868664699_4927714148.webp?updatedAt=1741192053938",
+        image: "https://ik.imagekit.io/edhumbling/Grilled%20Kebab%20Skewers%20Photo%20on%20Lummi.jpeg",
         category: "appetizer",
         popular: true,
         spicy: true

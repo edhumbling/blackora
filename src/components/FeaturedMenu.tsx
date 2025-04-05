@@ -39,7 +39,7 @@ const featuredItems = [
     name: "Suya Skewers",
     description: "Spicy grilled beef skewers marinated in a peanut-based spice blend. Served with fresh onions and tomatoes.",
     price: 16.99,
-    image: "https://ik.imagekit.io/edhumbling/IMG_4440-1.jpg?updatedAt=1743855331322",
+    image: "https://ik.imagekit.io/edhumbling/download%20(5).jpeg",
     category: "appetizer",
     popular: true,
     spicy: true
