@@ -4,10 +4,12 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import About from "@/components/About";
+import AnnouncementBanner from "@/components/AnnouncementBanner";
 
 const AboutPage = () => {
   return (
     <main className="min-h-screen">
+      <AnnouncementBanner />
       <Navbar />
 
       <div className="pt-32 pb-10 px-4 md:px-6 lg:px-8">

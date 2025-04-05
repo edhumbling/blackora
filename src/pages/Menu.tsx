@@ -8,6 +8,7 @@ import { MenuSection } from "@/types";
 import MenuFilter from "@/components/MenuFilter";
 import SpecialOffers from "@/components/SpecialOffers";
 import MenuDescription from "@/components/MenuDescription";
+import AnnouncementBanner from "@/components/AnnouncementBanner";
 
 const MENU_SECTIONS: MenuSection[] = [
   {

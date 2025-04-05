@@ -12,10 +12,12 @@ import Footer from "@/components/Footer";
 import WaakyeFeature from "@/components/WaakyeFeature";
 import SpecialOffers from "@/components/SpecialOffers";
 import MenuDescription from "@/components/MenuDescription";
+import AnnouncementBanner from "@/components/AnnouncementBanner";
 
 const Index = () => {
   return (
     <main className="min-h-screen">
+      <AnnouncementBanner />
       <Navbar />
       <Hero />
       <FeaturedFufu />
