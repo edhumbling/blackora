@@ -26,6 +26,15 @@ const featuredItems = [
     popular: true
   },
   {
+    id: "waakye-featured",
+    name: "Waakye",
+    description: "Ghanaian dish of rice and beans cooked with dried millet leaves, served with special waakye sauce, boiled eggs, fried plantains, and your choice of protein.",
+    price: 18.99,
+    image: "https://ik.imagekit.io/edhumbling/Waakye/Waakye%20(1).jpeg",
+    category: "main",
+    popular: true
+  },
+  {
     id: "3",
     name: "Suya Skewers",
     description: "Spicy grilled beef skewers marinated in a peanut-based spice blend. Served with fresh onions and tomatoes.",
@@ -34,15 +43,6 @@ const featuredItems = [
     category: "appetizer",
     popular: true,
     spicy: true
-  },
-  {
-    id: "4",
-    name: "Yam and Plantain",
-    description: "Traditional fried yam and plantain served with a spicy tomato dipping sauce. Perfect as a side or appetizer.",
-    price: 13.99,
-    image: "https://ik.imagekit.io/humbling/food/eatwithafia_1614699778_2520606889971483910_2014293526.jpg?updatedAt=1741190695139",
-    category: "side",
-    vegetarian: true
   }
 ];
 
@@ -56,7 +56,7 @@ const FeaturedMenu = () => {
             Experience the rich, bold flavors of authentic African cuisine, crafted with passion and tradition.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {featuredItems.map((item) => (
             <div key={item.id} className="animate-fade-in">
@@ -64,7 +64,7 @@ const FeaturedMenu = () => {
             </div>
           ))}
         </div>
-        
+
         <div className="flex justify-center mt-12">
           <Link to="/menu">
             <Button variant="outline" size="lg" className="border-gold-300 text-gold-700 hover:bg-gold-50">

@@ -44,10 +44,11 @@ const MENU_SECTIONS: MenuSection[] = [
       {
         id: "waakye",
         name: "Waakye",
-        description: "Ghanaian dish of rice and beans cooked with dried millet leaves, served with special waakye sauce, boiled eggs, and fried plantains.",
+        description: "Ghanaian dish of rice and beans cooked with dried millet leaves, served with special waakye sauce, boiled eggs, fried plantains, and your choice of protein.",
         price: 18.99,
-        image: "https://ik.imagekit.io/humbling/food/munchaway_gh_1730531172_3492599151217979179_57557695795.jpg?updatedAt=1741332618778",
-        category: "main"
+        image: "https://ik.imagekit.io/edhumbling/Waakye/Waakye.jpeg",
+        category: "main",
+        popular: true
       }
     ]
   },
@@ -220,7 +221,7 @@ const Menu = () => {
       }
 
       // Apply search query
-      if (searchQuery && !item.name.toLowerCase().includes(searchQuery.toLowerCase()) && 
+      if (searchQuery && !item.name.toLowerCase().includes(searchQuery.toLowerCase()) &&
           !item.description.toLowerCase().includes(searchQuery.toLowerCase())) {
         return false;
       }
@@ -237,7 +238,7 @@ const Menu = () => {
   return (
     <main className="min-h-screen">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 md:pb-24 bg-gold-50">
         <div className="container mx-auto px-4 sm:px-6">
@@ -251,11 +252,11 @@ const Menu = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Filters */}
       <section className="py-8 bg-white border-b border-gold-100">
         <div className="container mx-auto px-4 sm:px-6">
-          <MenuFilter 
+          <MenuFilter
             categoryFilter={categoryFilter}
             setCategoryFilter={setCategoryFilter}
             dietaryFilter={dietaryFilter}
@@ -265,7 +266,7 @@ const Menu = () => {
           />
         </div>
       </section>
-      
+
       {/* Menu Content */}
       <section className="py-12 md:py-16 bg-secondary/30">
         <div className="container mx-auto px-4 sm:px-6">
@@ -281,7 +282,7 @@ const Menu = () => {
           )}
         </div>
       </section>
-      
+
       <Footer />
       <Toaster position="top-right" />
     </main>

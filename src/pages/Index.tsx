@@ -9,6 +9,7 @@ import About from "@/components/About";
 import FoodKnowledge from "@/components/FoodKnowledge";
 import FAQPreview from "@/components/FAQPreview";
 import Footer from "@/components/Footer";
+import WaakyeFeature from "@/components/WaakyeFeature";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <FeaturedFufu />
+      <WaakyeFeature />
       <FeaturedMenu />
       <CustomerDelight />
       <About />
