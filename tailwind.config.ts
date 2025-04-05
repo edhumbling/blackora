@@ -19,6 +19,7 @@ export default {
 				lg: '2rem',
 			},
 			screens: {
+				xs: '480px',
 				sm: '640px',
 				md: '768px',
 				lg: '1024px',
@@ -27,6 +28,9 @@ export default {
 			}
 		},
 		extend: {
+			screens: {
+				xs: '480px',
+			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
 				serif: ['Playfair Display', 'serif'],
