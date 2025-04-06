@@ -51,8 +51,8 @@ const FAQPreview = () => {
                 How can I make a reservation?
               </AccordionTrigger>
               <AccordionContent className="px-4 py-2">
-                Reservations can be made online through our website's reservation page, by calling us at (250) 123-4567,
-                or by emailing reservations@authenticafricanfoods.com. We recommend making reservations at least 48 hours in advance,
+                Reservations can be made online through our website's reservation page, by calling us at (250) 301-3828,
+                or by emailing authenticafricanfoods@company.ca. We recommend making reservations at least 48 hours in advance,
                 especially for weekends and holidays.
               </AccordionContent>
             </AccordionItem>

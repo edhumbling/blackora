@@ -1,0 +1,13 @@
+[35msrc/components/FAQPreview.tsx[m[36m:[m                or by emailing reservations@[1;31mauthenticafricanfoods.com[m. We recommend making reservations at least 48 hours in advance,
+[35msrc/components/Footer.tsx[m[36m:[m                <span className="text-white/70">[1;31mauthenticafricanfoods@com[mpany.ca</span>
+[35msrc/pages/Contact.tsx[m[36m:[m                        <a href="mailto:[1;31mauthenticafricanfoods@com[mpany.ca" className="hover:text-gold-500 transition-colors">
+[35msrc/pages/Contact.tsx[m[36m:[m                          [1;31mauthenticafricanfoods@com[mpany.ca
+[35msrc/pages/FAQ.tsx[m[36m:[m                    or by emailing reservations@[1;31mauthenticafricanfoods.com[m. We recommend making reservations at least 48 hours in advance,
+[35msrc/pages/FAQ.tsx[m[36m:[m                    [1;31mauthenticafricanfoods@com[mpany.ca or call (250) 301-3828.
+[35msrc/pages/FAQ.tsx[m[36m:[m                <a href="mailto:[1;31mauthenticafricanfoods@com[mpany.ca" className="inline-flex">
+[35msrc/pages/OrderConfirmation.tsx[m[36m:[m                  <a href="mailto:[1;31mauthenticafricanfoods@com[mpany.ca" className="text-gold-600 hover:underline">
+[35msrc/pages/OrderConfirmation.tsx[m[36m:[m                    [1;31mauthenticafricanfoods@com[mpany.ca
+[35msrc/pages/Privacy.tsx[m[36m:[m                Email: [1;31mauthenticafricanfoods@com[mpany.ca<br />
+[35msrc/pages/Refund.tsx[m[36m:[m                <li>Email us at [1;31mauthenticafricanfoods@com[mpany.ca</li>
+[35msrc/pages/Refund.tsx[m[36m:[m                Email: [1;31mauthenticafricanfoods@com[mpany.ca<br />
+[35msrc/pages/Terms.tsx[m[36m:[m                Questions or comments about the Services or these Terms may be directed to our customer service team at [1;31mauthenticafricanfoods@com[mpany.ca or by calling us at (250) 301-3828.

@@ -190,7 +190,7 @@ const Careers = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      placeholder="(250) 123-4567"
+                      placeholder="(250) 301-3828"
                     />
                   </div>
 

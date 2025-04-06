@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Facebook, Instagram, Twitter, Mail, MapPin, Phone, Clock } from "lucide-react";
+import { Facebook, Instagram, Twitter, Mail, MapPin, Phone, Clock, User, Globe } from "lucide-react";
 import { toast } from "sonner";
 import ScrollingText from "./ScrollingText";
 
@@ -91,18 +91,26 @@ const Footer = () => {
             <h4 className="text-lg font-serif font-medium mb-6">Contact Us</h4>
             <ul className="space-y-4">
               <li className="flex items-start">
+                <User className="h-5 w-5 text-gold-400 mr-3 mt-0.5 shrink-0" />
+                <span className="text-white/70">Hardy Yusif</span>
+              </li>
+              <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-gold-400 mr-3 mt-0.5 shrink-0" />
                 <span className="text-white/70">
-                  123 Main Street, Prince George, BC V2L 3H1, Canada
+                  1471 Ingenika Street, Prince George, BC, Canada
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-gold-400 mr-3 shrink-0" />
-                <span className="text-white/70">(250) 123-4567</span>
+                <span className="text-white/70">(250) 301-3828</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-gold-400 mr-3 shrink-0" />
-                <span className="text-white/70">info@authenticafricanfoods.com</span>
+                <span className="text-white/70">authenticafricanfoods@company.ca</span>
+              </li>
+              <li className="flex items-center">
+                <Globe className="h-5 w-5 text-gold-400 mr-3 shrink-0" />
+                <span className="text-white/70">company.ca</span>
               </li>
               <li className="flex items-start">
                 <Clock className="h-5 w-5 text-gold-400 mr-3 mt-0.5 shrink-0" />

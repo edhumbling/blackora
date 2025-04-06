@@ -7,7 +7,8 @@ import AuthModal from "./AuthModal";
 const SpecialOffers = () => {
   const [isAuthOpen, setIsAuthOpen] = useState(false);
   return (
-    <section className="py-20 px-4 sm:px-6 bg-secondary/30">
+    <>
+      <section className="py-20 px-4 sm:px-6 bg-secondary/30">
       <div className="container mx-auto">
         <div className="text-center mb-12 max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-4">Special Offers & Delivery</h2>
@@ -115,10 +116,11 @@ const SpecialOffers = () => {
           </div>
         </div>
       </div>
-    </section>
+      </section>
 
-    {/* Auth Modal */}
-    <AuthModal isOpen={isAuthOpen} onClose={() => setIsAuthOpen(false)} initialTab="signup" />
+      {/* Auth Modal */}
+      <AuthModal isOpen={isAuthOpen} onClose={() => setIsAuthOpen(false)} initialTab="signup" />
+    </>
   );
 };
 

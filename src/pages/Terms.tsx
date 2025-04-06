@@ -85,7 +85,7 @@ const Terms = () => {
 
               <h2>9. Contact Information</h2>
               <p>
-                Questions or comments about the Services or these Terms may be directed to our customer service team at info@authenticafricanfoods.com or by calling us at (250) 123-4567.
+                Questions or comments about the Services or these Terms may be directed to our customer service team at authenticafricanfoods@company.ca or by calling us at (250) 301-3828.
               </p>
             </div>
           </div>

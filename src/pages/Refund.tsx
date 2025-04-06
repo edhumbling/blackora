@@ -94,8 +94,8 @@ const Refund = () => {
                 To request a refund, you can:
               </p>
               <ul>
-                <li>Call us at (250) 123-4567</li>
-                <li>Email us at refunds@authenticafricanfoods.com</li>
+                <li>Call us at (250) 301-3828</li>
+                <li>Email us at authenticafricanfoods@company.ca</li>
                 <li>Use the "Contact Us" form on our website</li>
                 <li>Speak to a manager if you are in the restaurant</li>
               </ul>
@@ -118,9 +118,9 @@ const Refund = () => {
                 If you have any questions about our Refund Policy, please contact us at:
               </p>
               <p>
-                Email: info@authenticafricanfoods.com<br />
-                Phone: (250) 123-4567<br />
-                Address: 123 Main Street, Prince George, BC V2L 3H1, Canada
+                Email: authenticafricanfoods@company.ca<br />
+                Phone: (250) 301-3828<br />
+                Address: 1471 Ingenika Street, Prince George, BC, Canada
               </p>
             </div>
           </div>

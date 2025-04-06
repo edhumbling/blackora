@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, User, Globe } from "lucide-react";
 
 const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -90,11 +90,20 @@ const Contact = () => {
 
                 <div className="space-y-6">
                   <div className="flex items-start">
+                    <User className="h-5 w-5 text-gold-500 mt-1 mr-3" />
+                    <div>
+                      <h3 className="font-medium">Owner</h3>
+                      <p className="text-muted-foreground mt-1">
+                        Hardy Yusif
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
                     <MapPin className="h-5 w-5 text-gold-500 mt-1 mr-3" />
                     <div>
                       <h3 className="font-medium">Address</h3>
                       <p className="text-muted-foreground mt-1">
-                        123 Main Street, Prince George, BC V2L 3H1, Canada
+                        1471 Ingenika Street, Prince George, BC, Canada
                       </p>
                     </div>
                   </div>
@@ -104,8 +113,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-medium">Phone</h3>
                       <p className="text-muted-foreground mt-1">
-                        <a href="tel:+12501234567" className="hover:text-gold-500 transition-colors">
-                          (250) 123-4567
+                        <a href="tel:+12503013828" className="hover:text-gold-500 transition-colors">
+                          (250) 301-3828
                         </a>
                       </p>
                     </div>
@@ -116,8 +125,20 @@ const Contact = () => {
                     <div>
                       <h3 className="font-medium">Email</h3>
                       <p className="text-muted-foreground mt-1">
-                        <a href="mailto:info@authenticafricanfoods.com" className="hover:text-gold-500 transition-colors">
-                          info@authenticafricanfoods.com
+                        <a href="mailto:authenticafricanfoods@company.ca" className="hover:text-gold-500 transition-colors">
+                          authenticafricanfoods@company.ca
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start">
+                    <Globe className="h-5 w-5 text-gold-500 mt-1 mr-3" />
+                    <div>
+                      <h3 className="font-medium">Website</h3>
+                      <p className="text-muted-foreground mt-1">
+                        <a href="https://company.ca" target="_blank" rel="noopener noreferrer" className="hover:text-gold-500 transition-colors">
+                          company.ca
                         </a>
                       </p>
                     </div>
@@ -139,7 +160,7 @@ const Contact = () => {
 
               <div className="bg-card shadow-lg rounded-lg border overflow-hidden h-64">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2405.8886118312403!2d-122.7452019235803!3d53.91719647238125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x538898f7919cf8f1%3A0x1b5372c4a6d2e8f8!2sPrince%20George%2C%20BC!5e0!3m2!1sen!2sca!4v1700663682317!5m2!1sen!2sca"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2405.8886118312403!2d-122.7452019235803!3d53.91719647238125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x538898f7919cf8f1%3A0x1b5372c4a6d2e8f8!2s1471%20Ingenika%20St%2C%20Prince%20George%2C%20BC!5e0!3m2!1sen!2sca!4v1700663682317!5m2!1sen!2sca"
                   className="w-full h-full border-0"
                   allowFullScreen
                   loading="lazy"

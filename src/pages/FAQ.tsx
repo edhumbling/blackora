@@ -48,8 +48,8 @@ const FAQ = () => {
                     How can I make a reservation?
                   </AccordionTrigger>
                   <AccordionContent className="px-4 py-2">
-                    Reservations can be made online through our website's reservation page, by calling us at (250) 123-4567,
-                    or by emailing reservations@authenticafricanfoods.com. We recommend making reservations at least 48 hours in advance,
+                    Reservations can be made online through our website's reservation page, by calling us at (250) 301-3828,
+                    or by emailing authenticafricanfoods@company.ca. We recommend making reservations at least 48 hours in advance,
                     especially for weekends and holidays.
                   </AccordionContent>
                 </AccordionItem>
@@ -102,7 +102,7 @@ const FAQ = () => {
                   <AccordionContent className="px-4 py-2">
                     Yes, we can accommodate large groups and private events. For parties of 8 or more, we recommend making
                     a reservation in advance. For private events or large parties, please contact our events coordinator at
-                    events@authenticafricanfoods.com or call (250) 123-4567 ext. 2.
+                    authenticafricanfoods@company.ca or call (250) 301-3828.
                   </AccordionContent>
                 </AccordionItem>
 
@@ -134,12 +134,12 @@ const FAQ = () => {
                 If you couldn't find the answer to your question, please don't hesitate to contact us directly.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="mailto:info@authenticafricanfoods.com" className="inline-flex">
+                <a href="mailto:authenticafricanfoods@company.ca" className="inline-flex">
                   <Button variant="default" className="bg-gold-500 hover:bg-gold-600 text-white">
                     Email Us
                   </Button>
                 </a>
-                <a href="tel:+12501234567" className="inline-flex">
+                <a href="tel:+12503013828" className="inline-flex">
                   <Button variant="outline" className="border-gold-300 text-gold-700 hover:bg-gold-50">
                     Call Us
                   </Button>

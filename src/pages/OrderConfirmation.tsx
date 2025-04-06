@@ -74,12 +74,12 @@ const OrderConfirmation = () => {
                 <h3 className="font-medium mb-2">Need Help?</h3>
                 <p className="text-sm text-muted-foreground">
                   Contact our customer support at{" "}
-                  <a href="tel:+1-250-123-4567" className="text-gold-600 hover:underline">
-                    (250) 123-4567
+                  <a href="tel:+1-250-301-3828" className="text-gold-600 hover:underline">
+                    (250) 301-3828
                   </a>{" "}
                   or{" "}
-                  <a href="mailto:support@authenticafricanfoods.com" className="text-gold-600 hover:underline">
-                    support@authenticafricanfoods.com
+                  <a href="mailto:authenticafricanfoods@company.ca" className="text-gold-600 hover:underline">
+                    authenticafricanfoods@company.ca
                   </a>
                 </p>
               </div>

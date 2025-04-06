@@ -102,9 +102,9 @@ const Privacy = () => {
                 If you have any questions or concerns about our Privacy Policy, please contact us at:
               </p>
               <p>
-                Email: privacy@authenticafricanfoods.com<br />
-                Phone: (250) 123-4567<br />
-                Address: 123 Main Street, Prince George, BC V2L 3H1, Canada
+                Email: authenticafricanfoods@company.ca<br />
+                Phone: (250) 301-3828<br />
+                Address: 1471 Ingenika Street, Prince George, BC, Canada
               </p>
             </div>
           </div>
